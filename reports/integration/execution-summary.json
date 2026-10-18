@@ -1,0 +1,55 @@
+{
+  "baseUri" : "https://automationintesting.online",
+  "generatedAt" : "2026-10-18T07:34:12.526460300Z",
+  "total" : 4,
+  "passed" : 4,
+  "failed" : 0,
+  "skipped" : 0,
+  "scopes" : {
+    "smoke" : {
+      "passed" : 0,
+      "failed" : 0,
+      "skipped" : 0
+    },
+    "regression" : {
+      "passed" : 4,
+      "failed" : 0,
+      "skipped" : 0
+    },
+    "contract" : {
+      "passed" : 0,
+      "failed" : 0,
+      "skipped" : 0
+    },
+    "integration" : {
+      "passed" : 4,
+      "failed" : 0,
+      "skipped" : 0
+    }
+  },
+  "tests" : [ {
+    "name" : "tests.room.RoomTests.isolatedRoomCrud",
+    "groups" : [ "regression", "integration" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 8656
+  }, {
+    "name" : "tests.booking.BookingTests.bookingRoomMessageReportWorkflow",
+    "groups" : [ "regression", "integration" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 8937
+  }, {
+    "name" : "tests.booking.BookingTests.overlappingBookingRejected",
+    "groups" : [ "negative", "regression", "integration" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 6653
+  }, {
+    "name" : "tests.message.MessageTests.createReadMarkReadDelete",
+    "groups" : [ "regression", "integration" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 4027
+  } ]
+}

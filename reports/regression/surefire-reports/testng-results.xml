@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="61" passed="58" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-10-18T13:10:15 IST" name="regression" finished-at="2026-10-18T13:12:03 IST" duration-ms="107849">
+    <groups>
+      <group name="boundary">
+        <method signature="BookingTests.invalidBookingContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.booking.BookingTests@6ee6f53]" name="invalidBookingContract" class="tests.booking.BookingTests"/>
+        <method signature="MessageTests.invalidMessageContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.message.MessageTests@421bba99]" name="invalidMessageContract" class="tests.message.MessageTests"/>
+        <method signature="RoomTests.acceptedPriceBoundaries(int)[pri:0, instance:tests.room.RoomTests@176b3f44]" name="acceptedPriceBoundaries" class="tests.room.RoomTests"/>
+        <method signature="RoomTests.invalidRoomContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.room.RoomTests@176b3f44]" name="invalidRoomContract" class="tests.room.RoomTests"/>
+      </group> <!-- boundary -->
+      <group name="authorization">
+        <method signature="AuthTests.invalidCredentials(java.lang.String)[pri:0, instance:tests.auth.AuthTests@4748a0f9]" name="invalidCredentials" class="tests.auth.AuthTests"/>
+        <method signature="AuthTests.invalidToken()[pri:0, instance:tests.auth.AuthTests@4748a0f9]" name="invalidToken" class="tests.auth.AuthTests"/>
+        <method signature="BookingTests.listRequiresAuthentication()[pri:0, instance:tests.booking.BookingTests@6ee6f53]" name="listRequiresAuthentication" class="tests.booking.BookingTests"/>
+        <method signature="BrandingReportTests.brandingUpdateRequiresSession()[pri:0, instance:tests.branding.BrandingReportTests@5d12a356]" name="brandingUpdateRequiresSession" class="tests.branding.BrandingReportTests"/>
+        <method signature="BrandingReportTests.reportsRequireSession()[pri:0, instance:tests.branding.BrandingReportTests@5d12a356]" name="reportsRequireSession" class="tests.branding.BrandingReportTests"/>
+        <method signature="MessageTests.individualMessageIsPublic()[pri:0, instance:tests.message.MessageTests@421bba99]" name="individualMessageIsPublic" class="tests.message.MessageTests"/>
+        <method signature="RoomTests.createRequiresSession()[pri:0, instance:tests.room.RoomTests@176b3f44]" name="createRequiresSession" class="tests.room.RoomTests"/>
+        <method signature="RoomTests.invalidSessionCannotCreateRoom()[pri:0, instance:tests.room.RoomTests@176b3f44]" name="invalidSessionCannotCreateRoom" class="tests.room.RoomTests"/>
+      </group> <!-- authorization -->
+      <group name="negative">
+        <method signature="AuthTests.invalidCredentials(java.lang.String)[pri:0, instance:tests.auth.AuthTests@4748a0f9]" name="invalidCredentials" class="tests.auth.AuthTests"/>
+        <method signature="AuthTests.invalidToken()[pri:0, instance:tests.auth.AuthTests@4748a0f9]" name="invalidToken" class="tests.auth.AuthTests"/>
+        <method signature="AuthTests.logoutRequiresToken()[pri:0, instance:tests.auth.AuthTests@4748a0f9]" name="logoutRequiresToken" class="tests.auth.AuthTests"/>
+        <method signature="AuthTests.missingToken()[pri:0, instance:tests.auth.AuthTests@4748a0f9]" name="missingToken" class="tests.auth.AuthTests"/>
+        <method signature="BookingTests.invalidBookingContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.booking.BookingTests@6ee6f53]" name="invalidBookingContract" class="tests.booking.BookingTests"/>
+        <method signature="BookingTests.listRequiresRoomFilter()[pri:0, instance:tests.booking.BookingTests@6ee6f53]" name="listRequiresRoomFilter" class="tests.booking.BookingTests"/>
+        <method signature="BookingTests.nonexistentBooking()[pri:0, instance:tests.booking.BookingTests@6ee6f53]" name="nonexistentBooking" class="tests.booking.BookingTests"/>
+        <method signature="BookingTests.overlappingBookingRejected()[pri:0, instance:tests.booking.BookingTests@6ee6f53]" name="overlappingBookingRejected" class="tests.booking.BookingTests"/>
+        <method signature="BookingTests.reversedDatesRejected()[pri:0, instance:tests.booking.BookingTests@6ee6f53]" name="reversedDatesRejected" class="tests.booking.BookingTests"/>
+        <method signature="MessageTests.invalidMessageContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.message.MessageTests@421bba99]" name="invalidMessageContract" class="tests.message.MessageTests"/>
+        <method signature="RoomTests.invalidRoomContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.room.RoomTests@176b3f44]" name="invalidRoomContract" class="tests.room.RoomTests"/>
+        <method signature="RoomTests.invalidRoomIdentifier()[pri:0, instance:tests.room.RoomTests@176b3f44]" name="invalidRoomIdentifier" class="tests.room.RoomTests"/>
+        <method signature="RoomTests.nonexistentRoomReturnsNotFound()[pri:0, instance:tests.room.RoomTests@176b3f44]" name="nonexistentRoomReturnsNotFound" class="tests.room.RoomTests"/>
+      </group> <!-- negative -->
+      <group name="regression">
+        <method signature="AuthTests.invalidCredentials(java.lang.String)[pri:0, instance:tests.auth.AuthTests@4748a0f9]" name="invalidCredentials" class="tests.auth.AuthTests"/>
+        <method signature="AuthTests.invalidToken()[pri:0, instance:tests.auth.AuthTests@4748a0f9]" name="invalidToken" class="tests.auth.AuthTests"/>
+        <method signature="AuthTests.logoutRequiresToken()[pri:0, instance:tests.auth.AuthTests@4748a0f9]" name="logoutRequiresToken" class="tests.auth.AuthTests"/>
+        <method signature="AuthTests.missingToken()[pri:0, instance:tests.auth.AuthTests@4748a0f9]" name="missingToken" class="tests.auth.AuthTests"/>
+        <method signature="AuthTests.validSessionCanBeReused()[pri:0, instance:tests.auth.AuthTests@4748a0f9]" name="validSessionCanBeReused" class="tests.auth.AuthTests"/>
+        <method signature="BookingTests.bookingRoomMessageReportWorkflow()[pri:0, instance:tests.booking.BookingTests@6ee6f53]" name="bookingRoomMessageReportWorkflow" class="tests.booking.BookingTests"/>
+        <method signature="BookingTests.filteredBookings()[pri:0, instance:tests.booking.BookingTests@6ee6f53]" name="filteredBookings" class="tests.booking.BookingTests"/>
+        <method signature="BookingTests.invalidBookingContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.booking.BookingTests@6ee6f53]" name="invalidBookingContract" class="tests.booking.BookingTests"/>
+        <method signature="BookingTests.listRequiresAuthentication()[pri:0, instance:tests.booking.BookingTests@6ee6f53]" name="listRequiresAuthentication" class="tests.booking.BookingTests"/>
+        <method signature="BookingTests.listRequiresRoomFilter()[pri:0, instance:tests.booking.BookingTests@6ee6f53]" name="listRequiresRoomFilter" class="tests.booking.BookingTests"/>
+        <method signature="BookingTests.nonexistentBooking()[pri:0, instance:tests.booking.BookingTests@6ee6f53]" name="nonexistentBooking" class="tests.booking.BookingTests"/>
+        <method signature="BookingTests.overlappingBookingRejected()[pri:0, instance:tests.booking.BookingTests@6ee6f53]" name="overlappingBookingRejected" class="tests.booking.BookingTests"/>
+        <method signature="BookingTests.reversedDatesRejected()[pri:0, instance:tests.booking.BookingTests@6ee6f53]" name="reversedDatesRejected" class="tests.booking.BookingTests"/>
+        <method signature="BrandingReportTests.authenticatedReport()[pri:0, instance:tests.branding.BrandingReportTests@5d12a356]" name="authenticatedReport" class="tests.branding.BrandingReportTests"/>
+        <method signature="BrandingReportTests.brandingHasContactAndLocation()[pri:0, instance:tests.branding.BrandingReportTests@5d12a356]" name="brandingHasContactAndLocation" class="tests.branding.BrandingReportTests"/>
+        <method signature="BrandingReportTests.brandingUpdateRequiresSession()[pri:0, instance:tests.branding.BrandingReportTests@5d12a356]" name="brandingUpdateRequiresSession" class="tests.branding.BrandingReportTests"/>
+        <method signature="BrandingReportTests.reportsRequireSession()[pri:0, instance:tests.branding.BrandingReportTests@5d12a356]" name="reportsRequireSession" class="tests.branding.BrandingReportTests"/>
+        <method signature="ContractTests.healthContract()[pri:0, instance:tests.contracts.ContractTests@134d26af]" name="healthContract" class="tests.contracts.ContractTests"/>
+        <method signature="ContractTests.publishedReadContracts(java.lang.String,java.lang.String)[pri:0, instance:tests.contracts.ContractTests@134d26af]" name="publishedReadContracts" class="tests.contracts.ContractTests"/>
+        <method signature="MessageTests.createReadMarkReadDelete()[pri:0, instance:tests.message.MessageTests@421bba99]" name="createReadMarkReadDelete" class="tests.message.MessageTests"/>
+        <method signature="MessageTests.individualMessageIsPublic()[pri:0, instance:tests.message.MessageTests@421bba99]" name="individualMessageIsPublic" class="tests.message.MessageTests"/>
+        <method signature="MessageTests.invalidMessageContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.message.MessageTests@421bba99]" name="invalidMessageContract" class="tests.message.MessageTests"/>
+        <method signature="MessageTests.publicMessageList()[pri:0, instance:tests.message.MessageTests@421bba99]" name="publicMessageList" class="tests.message.MessageTests"/>
+        <method signature="RoomTests.acceptedPriceBoundaries(int)[pri:0, instance:tests.room.RoomTests@176b3f44]" name="acceptedPriceBoundaries" class="tests.room.RoomTests"/>
+        <method signature="RoomTests.createRequiresSession()[pri:0, instance:tests.room.RoomTests@176b3f44]" name="createRequiresSession" class="tests.room.RoomTests"/>
+        <method signature="RoomTests.invalidRoomContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.room.RoomTests@176b3f44]" name="invalidRoomContract" class="tests.room.RoomTests"/>
+        <method signature="RoomTests.invalidRoomIdentifier()[pri:0, instance:tests.room.RoomTests@176b3f44]" name="invalidRoomIdentifier" class="tests.room.RoomTests"/>
+        <method signature="RoomTests.invalidSessionCannotCreateRoom()[pri:0, instance:tests.room.RoomTests@176b3f44]" name="invalidSessionCannotCreateRoom" class="tests.room.RoomTests"/>
+        <method signature="RoomTests.isolatedRoomCrud()[pri:0, instance:tests.room.RoomTests@176b3f44]" name="isolatedRoomCrud" class="tests.room.RoomTests"/>
+        <method signature="RoomTests.nonexistentRoomReturnsNotFound()[pri:0, instance:tests.room.RoomTests@176b3f44]" name="nonexistentRoomReturnsNotFound" class="tests.room.RoomTests"/>
+        <method signature="RoomTests.roomsAreReadable()[pri:0, instance:tests.room.RoomTests@176b3f44]" name="roomsAreReadable" class="tests.room.RoomTests"/>
+      </group> <!-- regression -->
+      <group name="contract">
+        <method signature="ContractTests.healthContract()[pri:0, instance:tests.contracts.ContractTests@134d26af]" name="healthContract" class="tests.contracts.ContractTests"/>
+        <method signature="ContractTests.publishedReadContracts(java.lang.String,java.lang.String)[pri:0, instance:tests.contracts.ContractTests@134d26af]" name="publishedReadContracts" class="tests.contracts.ContractTests"/>
+      </group> <!-- contract -->
+      <group name="integration">
+        <method signature="BookingTests.bookingRoomMessageReportWorkflow()[pri:0, instance:tests.booking.BookingTests@6ee6f53]" name="bookingRoomMessageReportWorkflow" class="tests.booking.BookingTests"/>
+        <method signature="BookingTests.overlappingBookingRejected()[pri:0, instance:tests.booking.BookingTests@6ee6f53]" name="overlappingBookingRejected" class="tests.booking.BookingTests"/>
+        <method signature="MessageTests.createReadMarkReadDelete()[pri:0, instance:tests.message.MessageTests@421bba99]" name="createReadMarkReadDelete" class="tests.message.MessageTests"/>
+        <method signature="RoomTests.isolatedRoomCrud()[pri:0, instance:tests.room.RoomTests@176b3f44]" name="isolatedRoomCrud" class="tests.room.RoomTests"/>
+      </group> <!-- integration -->
+      <group name="smoke">
+        <method signature="AuthTests.validSessionCanBeReused()[pri:0, instance:tests.auth.AuthTests@4748a0f9]" name="validSessionCanBeReused" class="tests.auth.AuthTests"/>
+        <method signature="BookingTests.filteredBookings()[pri:0, instance:tests.booking.BookingTests@6ee6f53]" name="filteredBookings" class="tests.booking.BookingTests"/>
+        <method signature="BrandingReportTests.brandingHasContactAndLocation()[pri:0, instance:tests.branding.BrandingReportTests@5d12a356]" name="brandingHasContactAndLocation" class="tests.branding.BrandingReportTests"/>
+        <method signature="ContractTests.healthContract()[pri:0, instance:tests.contracts.ContractTests@134d26af]" name="healthContract" class="tests.contracts.ContractTests"/>
+        <method signature="MessageTests.publicMessageList()[pri:0, instance:tests.message.MessageTests@421bba99]" name="publicMessageList" class="tests.message.MessageTests"/>
+        <method signature="RoomTests.roomsAreReadable()[pri:0, instance:tests.room.RoomTests@176b3f44]" name="roomsAreReadable" class="tests.room.RoomTests"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2026-10-18T13:10:15 IST" name="regression" finished-at="2026-10-18T13:12:03 IST" duration-ms="107849">
+      <class name="tests.room.RoomTests">
+        <test-method signature="acceptedPriceBoundaries(int)[pri:0, instance:tests.room.RoomTests@176b3f44]" started-at="2026-10-18T13:10:22 IST" name="acceptedPriceBoundaries" data-provider="priceBoundaries" finished-at="2026-10-18T13:10:27 IST" duration-ms="4885" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acceptedPriceBoundaries -->
+        <test-method signature="acceptedPriceBoundaries(int)[pri:0, instance:tests.room.RoomTests@176b3f44]" started-at="2026-10-18T13:10:27 IST" name="acceptedPriceBoundaries" data-provider="priceBoundaries" finished-at="2026-10-18T13:10:32 IST" duration-ms="4922" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[999]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acceptedPriceBoundaries -->
+        <test-method signature="createRequiresSession()[pri:0, instance:tests.room.RoomTests@176b3f44]" started-at="2026-10-18T13:10:32 IST" name="createRequiresSession" finished-at="2026-10-18T13:10:32 IST" duration-ms="260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createRequiresSession -->
+        <test-method signature="invalidRoomContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.room.RoomTests@176b3f44]" started-at="2026-10-18T13:10:32 IST" name="invalidRoomContract" data-provider="invalidRooms" finished-at="2026-10-18T13:10:33 IST" duration-ms="1017" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[roomName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidRoomContract -->
+        <test-method signature="invalidRoomContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.room.RoomTests@176b3f44]" started-at="2026-10-18T13:10:33 IST" name="invalidRoomContract" data-provider="invalidRooms" finished-at="2026-10-18T13:10:34 IST" duration-ms="947" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[roomName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidRoomContract -->
+        <test-method signature="invalidRoomContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.room.RoomTests@176b3f44]" started-at="2026-10-18T13:10:34 IST" name="invalidRoomContract" data-provider="invalidRooms" finished-at="2026-10-18T13:10:35 IST" duration-ms="735" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[type]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidRoomContract -->
+        <test-method signature="invalidRoomContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.room.RoomTests@176b3f44]" started-at="2026-10-18T13:10:35 IST" name="invalidRoomContract" data-provider="invalidRooms" finished-at="2026-10-18T13:10:35 IST" duration-ms="648" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[type]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Penthouse]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidRoomContract -->
+        <test-method signature="invalidRoomContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.room.RoomTests@176b3f44]" started-at="2026-10-18T13:10:35 IST" name="invalidRoomContract" data-provider="invalidRooms" finished-at="2026-10-18T13:10:36 IST" duration-ms="791" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[roomPrice]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidRoomContract -->
+        <test-method signature="invalidRoomContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.room.RoomTests@176b3f44]" started-at="2026-10-18T13:10:36 IST" name="invalidRoomContract" data-provider="invalidRooms" finished-at="2026-10-18T13:10:37 IST" duration-ms="627" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[roomPrice]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidRoomContract -->
+        <test-method signature="invalidRoomContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.room.RoomTests@176b3f44]" started-at="2026-10-18T13:10:37 IST" name="invalidRoomContract" data-provider="invalidRooms" finished-at="2026-10-18T13:10:37 IST" duration-ms="604" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[roomPrice]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[not-a-number]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidRoomContract -->
+        <test-method signature="invalidRoomIdentifier()[pri:0, instance:tests.room.RoomTests@176b3f44]" started-at="2026-10-18T13:10:37 IST" name="invalidRoomIdentifier" finished-at="2026-10-18T13:10:38 IST" duration-ms="312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidRoomIdentifier -->
+        <test-method signature="invalidSessionCannotCreateRoom()[pri:0, instance:tests.room.RoomTests@176b3f44]" started-at="2026-10-18T13:10:38 IST" name="invalidSessionCannotCreateRoom" finished-at="2026-10-18T13:10:38 IST" duration-ms="485" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[HTTP status (sanitized evidence attached on failure) expected [403] but found [500]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: HTTP status (sanitized evidence attached on failure) expected [403] but found [500]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1431)
+at org.testng.Assert.assertEquals(Assert.java:1395)
+at tests.support.Checks.status(Checks.java:9)
+at tests.room.RoomTests.invalidSessionCannotCreateRoom(RoomTests.java:120)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidSessionCannotCreateRoom -->
+        <test-method signature="isolatedRoomCrud()[pri:0, instance:tests.room.RoomTests@176b3f44]" started-at="2026-10-18T13:10:38 IST" name="isolatedRoomCrud" finished-at="2026-10-18T13:10:44 IST" duration-ms="5370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isolatedRoomCrud -->
+        <test-method signature="nonexistentRoomReturnsNotFound()[pri:0, instance:tests.room.RoomTests@176b3f44]" started-at="2026-10-18T13:10:44 IST" name="nonexistentRoomReturnsNotFound" finished-at="2026-10-18T13:10:44 IST" duration-ms="406" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[HTTP status (sanitized evidence attached on failure) expected [404] but found [500]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: HTTP status (sanitized evidence attached on failure) expected [404] but found [500]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1431)
+at org.testng.Assert.assertEquals(Assert.java:1395)
+at tests.support.Checks.status(Checks.java:9)
+at tests.room.RoomTests.nonexistentRoomReturnsNotFound(RoomTests.java:104)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nonexistentRoomReturnsNotFound -->
+        <test-method signature="roomsAreReadable()[pri:0, instance:tests.room.RoomTests@176b3f44]" started-at="2026-10-18T13:10:44 IST" name="roomsAreReadable" finished-at="2026-10-18T13:10:45 IST" duration-ms="837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- roomsAreReadable -->
+      </class> <!-- tests.room.RoomTests -->
+      <class name="tests.branding.BrandingReportTests">
+        <test-method signature="authenticatedReport()[pri:0, instance:tests.branding.BrandingReportTests@5d12a356]" started-at="2026-10-18T13:11:57 IST" name="authenticatedReport" finished-at="2026-10-18T13:11:57 IST" duration-ms="816" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- authenticatedReport -->
+        <test-method signature="brandingHasContactAndLocation()[pri:0, instance:tests.branding.BrandingReportTests@5d12a356]" started-at="2026-10-18T13:11:57 IST" name="brandingHasContactAndLocation" finished-at="2026-10-18T13:11:58 IST" duration-ms="402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brandingHasContactAndLocation -->
+        <test-method signature="brandingUpdateRequiresSession()[pri:0, instance:tests.branding.BrandingReportTests@5d12a356]" started-at="2026-10-18T13:11:58 IST" name="brandingUpdateRequiresSession" finished-at="2026-10-18T13:11:58 IST" duration-ms="240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brandingUpdateRequiresSession -->
+        <test-method signature="reportsRequireSession()[pri:0, instance:tests.branding.BrandingReportTests@5d12a356]" started-at="2026-10-18T13:11:58 IST" name="reportsRequireSession" finished-at="2026-10-18T13:11:58 IST" duration-ms="467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportsRequireSession -->
+      </class> <!-- tests.branding.BrandingReportTests -->
+      <class name="tests.contracts.ContractTests">
+        <test-method signature="healthContract()[pri:0, instance:tests.contracts.ContractTests@134d26af]" started-at="2026-10-18T13:11:58 IST" name="healthContract" finished-at="2026-10-18T13:11:59 IST" duration-ms="253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- healthContract -->
+        <test-method signature="publishedReadContracts(java.lang.String,java.lang.String)[pri:0, instance:tests.contracts.ContractTests@134d26af]" started-at="2026-10-18T13:11:59 IST" name="publishedReadContracts" data-provider="contracts" finished-at="2026-10-18T13:11:59 IST" duration-ms="710" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[room]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Rooms]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- publishedReadContracts -->
+        <test-method signature="publishedReadContracts(java.lang.String,java.lang.String)[pri:0, instance:tests.contracts.ContractTests@134d26af]" started-at="2026-10-18T13:11:59 IST" name="publishedReadContracts" data-provider="contracts" finished-at="2026-10-18T13:12:00 IST" duration-ms="274" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[message]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Messages]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- publishedReadContracts -->
+        <test-method signature="publishedReadContracts(java.lang.String,java.lang.String)[pri:0, instance:tests.contracts.ContractTests@134d26af]" started-at="2026-10-18T13:12:00 IST" name="publishedReadContracts" data-provider="contracts" finished-at="2026-10-18T13:12:00 IST" duration-ms="610" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[branding]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Branding]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- publishedReadContracts -->
+        <test-method signature="publishedReadContracts(java.lang.String,java.lang.String)[pri:0, instance:tests.contracts.ContractTests@134d26af]" started-at="2026-10-18T13:12:00 IST" name="publishedReadContracts" data-provider="contracts" finished-at="2026-10-18T13:12:01 IST" duration-ms="1016" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[report]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Report]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Published schema mismatch for report/Report; compare sanitized HTTP evidence with the versioned schema]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Published schema mismatch for report/Report; compare sanitized HTTP evidence with the versioned schema
+at tests.contracts.ContractTests.publishedReadContracts(ContractTests.java:50)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- publishedReadContracts -->
+        <test-method signature="publishedReadContracts(java.lang.String,java.lang.String)[pri:0, instance:tests.contracts.ContractTests@134d26af]" started-at="2026-10-18T13:12:01 IST" name="publishedReadContracts" data-provider="contracts" finished-at="2026-10-18T13:12:03 IST" duration-ms="1202" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[booking]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bookings]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- publishedReadContracts -->
+      </class> <!-- tests.contracts.ContractTests -->
+      <class name="tests.booking.BookingTests">
+        <test-method signature="bookingRoomMessageReportWorkflow()[pri:0, instance:tests.booking.BookingTests@6ee6f53]" started-at="2026-10-18T13:10:45 IST" name="bookingRoomMessageReportWorkflow" finished-at="2026-10-18T13:10:54 IST" duration-ms="8803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookingRoomMessageReportWorkflow -->
+        <test-method signature="filteredBookings()[pri:0, instance:tests.booking.BookingTests@6ee6f53]" started-at="2026-10-18T13:10:54 IST" name="filteredBookings" finished-at="2026-10-18T13:10:55 IST" duration-ms="1132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filteredBookings -->
+        <test-method signature="invalidBookingContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.booking.BookingTests@6ee6f53]" started-at="2026-10-18T13:10:55 IST" name="invalidBookingContract" data-provider="invalidBookings" finished-at="2026-10-18T13:10:59 IST" duration-ms="4177" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firstname]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidBookingContract -->
+        <test-method signature="invalidBookingContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.booking.BookingTests@6ee6f53]" started-at="2026-10-18T13:10:59 IST" name="invalidBookingContract" data-provider="invalidBookings" finished-at="2026-10-18T13:11:04 IST" duration-ms="4610" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firstname]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ab]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidBookingContract -->
+        <test-method signature="invalidBookingContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.booking.BookingTests@6ee6f53]" started-at="2026-10-18T13:11:04 IST" name="invalidBookingContract" data-provider="invalidBookings" finished-at="2026-10-18T13:11:08 IST" duration-ms="4165" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firstname]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aaaaaaaaaaaaaaaaaaa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidBookingContract -->
+        <test-method signature="invalidBookingContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.booking.BookingTests@6ee6f53]" started-at="2026-10-18T13:11:08 IST" name="invalidBookingContract" data-provider="invalidBookings" finished-at="2026-10-18T13:11:12 IST" duration-ms="4007" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lastname]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidBookingContract -->
+        <test-method signature="invalidBookingContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.booking.BookingTests@6ee6f53]" started-at="2026-10-18T13:11:12 IST" name="invalidBookingContract" data-provider="invalidBookings" finished-at="2026-10-18T13:11:16 IST" duration-ms="4192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lastname]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ab]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidBookingContract -->
+        <test-method signature="invalidBookingContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.booking.BookingTests@6ee6f53]" started-at="2026-10-18T13:11:16 IST" name="invalidBookingContract" data-provider="invalidBookings" finished-at="2026-10-18T13:11:20 IST" duration-ms="4184" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lastname]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidBookingContract -->
+        <test-method signature="invalidBookingContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.booking.BookingTests@6ee6f53]" started-at="2026-10-18T13:11:20 IST" name="invalidBookingContract" data-provider="invalidBookings" finished-at="2026-10-18T13:11:24 IST" duration-ms="3947" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[roomid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidBookingContract -->
+        <test-method signature="invalidBookingContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.booking.BookingTests@6ee6f53]" started-at="2026-10-18T13:11:24 IST" name="invalidBookingContract" data-provider="invalidBookings" finished-at="2026-10-18T13:11:28 IST" duration-ms="4275" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[email]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidBookingContract -->
+        <test-method signature="invalidBookingContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.booking.BookingTests@6ee6f53]" started-at="2026-10-18T13:11:28 IST" name="invalidBookingContract" data-provider="invalidBookings" finished-at="2026-10-18T13:11:33 IST" duration-ms="4283" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[phone]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidBookingContract -->
+        <test-method signature="listRequiresAuthentication()[pri:0, instance:tests.booking.BookingTests@6ee6f53]" started-at="2026-10-18T13:11:33 IST" name="listRequiresAuthentication" finished-at="2026-10-18T13:11:33 IST" duration-ms="416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listRequiresAuthentication -->
+        <test-method signature="listRequiresRoomFilter()[pri:0, instance:tests.booking.BookingTests@6ee6f53]" started-at="2026-10-18T13:11:33 IST" name="listRequiresRoomFilter" finished-at="2026-10-18T13:11:34 IST" duration-ms="536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listRequiresRoomFilter -->
+        <test-method signature="nonexistentBooking()[pri:0, instance:tests.booking.BookingTests@6ee6f53]" started-at="2026-10-18T13:11:34 IST" name="nonexistentBooking" finished-at="2026-10-18T13:11:34 IST" duration-ms="726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nonexistentBooking -->
+        <test-method signature="overlappingBookingRejected()[pri:0, instance:tests.booking.BookingTests@6ee6f53]" started-at="2026-10-18T13:11:34 IST" name="overlappingBookingRejected" finished-at="2026-10-18T13:11:40 IST" duration-ms="6085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- overlappingBookingRejected -->
+        <test-method signature="reversedDatesRejected()[pri:0, instance:tests.booking.BookingTests@6ee6f53]" started-at="2026-10-18T13:11:40 IST" name="reversedDatesRejected" finished-at="2026-10-18T13:11:45 IST" duration-ms="4194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reversedDatesRejected -->
+      </class> <!-- tests.booking.BookingTests -->
+      <class name="tests.message.MessageTests">
+        <test-method signature="createReadMarkReadDelete()[pri:0, instance:tests.message.MessageTests@421bba99]" started-at="2026-10-18T13:11:45 IST" name="createReadMarkReadDelete" finished-at="2026-10-18T13:11:49 IST" duration-ms="4403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createReadMarkReadDelete -->
+        <test-method signature="individualMessageIsPublic()[pri:0, instance:tests.message.MessageTests@421bba99]" started-at="2026-10-18T13:11:49 IST" name="individualMessageIsPublic" finished-at="2026-10-18T13:11:52 IST" duration-ms="3417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- individualMessageIsPublic -->
+        <test-method signature="invalidMessageContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.message.MessageTests@421bba99]" started-at="2026-10-18T13:11:52 IST" name="invalidMessageContract" data-provider="invalidMessages" finished-at="2026-10-18T13:11:53 IST" duration-ms="405" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[name]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidMessageContract -->
+        <test-method signature="invalidMessageContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.message.MessageTests@421bba99]" started-at="2026-10-18T13:11:53 IST" name="invalidMessageContract" data-provider="invalidMessages" finished-at="2026-10-18T13:11:53 IST" duration-ms="426" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[name]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidMessageContract -->
+        <test-method signature="invalidMessageContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.message.MessageTests@421bba99]" started-at="2026-10-18T13:11:53 IST" name="invalidMessageContract" data-provider="invalidMessages" finished-at="2026-10-18T13:11:53 IST" duration-ms="247" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[email]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidMessageContract -->
+        <test-method signature="invalidMessageContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.message.MessageTests@421bba99]" started-at="2026-10-18T13:11:53 IST" name="invalidMessageContract" data-provider="invalidMessages" finished-at="2026-10-18T13:11:54 IST" duration-ms="358" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[email]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidMessageContract -->
+        <test-method signature="invalidMessageContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.message.MessageTests@421bba99]" started-at="2026-10-18T13:11:54 IST" name="invalidMessageContract" data-provider="invalidMessages" finished-at="2026-10-18T13:11:54 IST" duration-ms="401" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[phone]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1111111111]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidMessageContract -->
+        <test-method signature="invalidMessageContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.message.MessageTests@421bba99]" started-at="2026-10-18T13:11:54 IST" name="invalidMessageContract" data-provider="invalidMessages" finished-at="2026-10-18T13:11:55 IST" duration-ms="548" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[phone]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1111111111111111111111]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidMessageContract -->
+        <test-method signature="invalidMessageContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.message.MessageTests@421bba99]" started-at="2026-10-18T13:11:55 IST" name="invalidMessageContract" data-provider="invalidMessages" finished-at="2026-10-18T13:11:55 IST" duration-ms="235" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[subject]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aaaa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidMessageContract -->
+        <test-method signature="invalidMessageContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.message.MessageTests@421bba99]" started-at="2026-10-18T13:11:55 IST" name="invalidMessageContract" data-provider="invalidMessages" finished-at="2026-10-18T13:11:55 IST" duration-ms="471" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[subject]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidMessageContract -->
+        <test-method signature="invalidMessageContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.message.MessageTests@421bba99]" started-at="2026-10-18T13:11:55 IST" name="invalidMessageContract" data-provider="invalidMessages" finished-at="2026-10-18T13:11:56 IST" duration-ms="233" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[description]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aaaaaaaaaaaaaaaaaaa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidMessageContract -->
+        <test-method signature="invalidMessageContract(java.lang.String,java.lang.Object)[pri:0, instance:tests.message.MessageTests@421bba99]" started-at="2026-10-18T13:11:56 IST" name="invalidMessageContract" data-provider="invalidMessages" finished-at="2026-10-18T13:11:56 IST" duration-ms="322" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[description]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidMessageContract -->
+        <test-method signature="publicMessageList()[pri:0, instance:tests.message.MessageTests@421bba99]" started-at="2026-10-18T13:11:56 IST" name="publicMessageList" finished-at="2026-10-18T13:11:57 IST" duration-ms="475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- publicMessageList -->
+      </class> <!-- tests.message.MessageTests -->
+      <class name="tests.auth.AuthTests">
+        <test-method signature="invalidCredentials(java.lang.String)[pri:0, instance:tests.auth.AuthTests@4748a0f9]" started-at="2026-10-18T13:10:15 IST" name="invalidCredentials" data-provider="invalidLogins" finished-at="2026-10-18T13:10:18 IST" duration-ms="3265" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrong-password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidCredentials -->
+        <test-method signature="invalidCredentials(java.lang.String)[pri:0, instance:tests.auth.AuthTests@4748a0f9]" started-at="2026-10-18T13:10:18 IST" name="invalidCredentials" data-provider="invalidLogins" finished-at="2026-10-18T13:10:19 IST" duration-ms="478" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[missing-password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidCredentials -->
+        <test-method signature="invalidCredentials(java.lang.String)[pri:0, instance:tests.auth.AuthTests@4748a0f9]" started-at="2026-10-18T13:10:19 IST" name="invalidCredentials" data-provider="invalidLogins" finished-at="2026-10-18T13:10:19 IST" duration-ms="629" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[missing-username]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidCredentials -->
+        <test-method signature="invalidToken()[pri:0, instance:tests.auth.AuthTests@4748a0f9]" started-at="2026-10-18T13:10:19 IST" name="invalidToken" finished-at="2026-10-18T13:10:20 IST" duration-ms="497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidToken -->
+        <test-method signature="logoutRequiresToken()[pri:0, instance:tests.auth.AuthTests@4748a0f9]" started-at="2026-10-18T13:10:20 IST" name="logoutRequiresToken" finished-at="2026-10-18T13:10:20 IST" duration-ms="429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutRequiresToken -->
+        <test-method signature="missingToken()[pri:0, instance:tests.auth.AuthTests@4748a0f9]" started-at="2026-10-18T13:10:20 IST" name="missingToken" finished-at="2026-10-18T13:10:21 IST" duration-ms="446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- missingToken -->
+        <test-method signature="validSessionCanBeReused()[pri:0, instance:tests.auth.AuthTests@4748a0f9]" started-at="2026-10-18T13:10:21 IST" name="validSessionCanBeReused" finished-at="2026-10-18T13:10:22 IST" duration-ms="1289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validSessionCanBeReused -->
+      </class> <!-- tests.auth.AuthTests -->
+    </test> <!-- regression -->
+  </suite> <!-- regression -->
+</testng-results>

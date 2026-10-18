@@ -1,0 +1,59 @@
+{
+  "baseUri" : "https://automationintesting.online",
+  "generatedAt" : "2026-10-18T07:33:06.002690300Z",
+  "total" : 4,
+  "passed" : 0,
+  "failed" : 4,
+  "skipped" : 0,
+  "scopes" : {
+    "smoke" : {
+      "passed" : 0,
+      "failed" : 0,
+      "skipped" : 0
+    },
+    "regression" : {
+      "passed" : 0,
+      "failed" : 4,
+      "skipped" : 0
+    },
+    "contract" : {
+      "passed" : 0,
+      "failed" : 0,
+      "skipped" : 0
+    },
+    "integration" : {
+      "passed" : 0,
+      "failed" : 4,
+      "skipped" : 0
+    }
+  },
+  "tests" : [ {
+    "name" : "tests.room.RoomTests.isolatedRoomCrud",
+    "groups" : [ "regression", "integration" ],
+    "parameters" : [ ],
+    "status" : "failed",
+    "durationMs" : 9150,
+    "failure" : "java.lang.AssertionError"
+  }, {
+    "name" : "tests.booking.BookingTests.bookingRoomMessageReportWorkflow",
+    "groups" : [ "regression", "integration" ],
+    "parameters" : [ ],
+    "status" : "failed",
+    "durationMs" : 8519,
+    "failure" : "java.lang.NullPointerException"
+  }, {
+    "name" : "tests.booking.BookingTests.overlappingBookingRejected",
+    "groups" : [ "negative", "regression", "integration" ],
+    "parameters" : [ ],
+    "status" : "failed",
+    "durationMs" : 6489,
+    "failure" : "java.lang.AssertionError"
+  }, {
+    "name" : "tests.message.MessageTests.createReadMarkReadDelete",
+    "groups" : [ "regression", "integration" ],
+    "parameters" : [ ],
+    "status" : "failed",
+    "durationMs" : 3014,
+    "failure" : "java.lang.AssertionError"
+  } ]
+}

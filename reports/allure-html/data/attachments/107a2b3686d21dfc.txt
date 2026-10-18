@@ -1,0 +1,13 @@
+POST https://automationintesting.online/api/auth/login
+Accept: application/json; Content-Type: application/json
+Credentials/cookies/headers omitted
+{"username":"[REDACTED]","password":"[REDACTED]"}
+HTTP 200
+{"token":"[REDACTED]"}
+
+GET https://automationintesting.online/api/report
+Accept: application/json; Content-Type: application/json
+Credentials/cookies/headers omitted
+<empty>
+HTTP 200
+{"report":[{"end":"2026-02-05","start":"2026-02-01","title":"[REDACTED]"},{"end":"2026-10-19","start":"2026-10-18","title":"[REDACTED]"},{"end":"2026-02-04","start":"2026-02-02","title":"[REDACTED]"},{"end":"2026-03-05","start":"2026-03-01","title":"[REDACTED]"}]}

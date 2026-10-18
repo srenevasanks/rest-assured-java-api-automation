@@ -1,0 +1,14 @@
+launch_status failed=3 1792309397000000000
+launch_status broken=0 1792309397000000000
+launch_status passed=58 1792309397000000000
+launch_status skipped=0 1792309397000000000
+launch_status unknown=0 1792309397000000000
+launch_time duration=107708 1792309397000000000
+launch_time min_duration=232 1792309397000000000
+launch_time max_duration=8802 1792309397000000000
+launch_time sum_duration=107418 1792309397000000000
+launch_time start=1792309215319 1792309397000000000
+launch_time stop=1792309323027 1792309397000000000
+launch_problems assertion_or_contract_failure_(triage_required)=3 1792309397000000000
+launch_retries retries=0 1792309397000000000
+launch_retries run=61 1792309397000000000

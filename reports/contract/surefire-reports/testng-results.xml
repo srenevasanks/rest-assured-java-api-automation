@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="29" total="35" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-10-18T13:09:14 IST" name="contract" finished-at="2026-10-18T13:09:23 IST" duration-ms="8707">
+    <groups>
+      <group name="regression">
+        <method signature="ContractTests.healthContract()[pri:0, instance:tests.contracts.ContractTests@134d26af]" name="healthContract" class="tests.contracts.ContractTests"/>
+        <method signature="ContractTests.publishedReadContracts(java.lang.String,java.lang.String)[pri:0, instance:tests.contracts.ContractTests@134d26af]" name="publishedReadContracts" class="tests.contracts.ContractTests"/>
+      </group> <!-- regression -->
+      <group name="contract">
+        <method signature="ContractTests.healthContract()[pri:0, instance:tests.contracts.ContractTests@134d26af]" name="healthContract" class="tests.contracts.ContractTests"/>
+        <method signature="ContractTests.publishedReadContracts(java.lang.String,java.lang.String)[pri:0, instance:tests.contracts.ContractTests@134d26af]" name="publishedReadContracts" class="tests.contracts.ContractTests"/>
+      </group> <!-- contract -->
+      <group name="smoke">
+        <method signature="ContractTests.healthContract()[pri:0, instance:tests.contracts.ContractTests@134d26af]" name="healthContract" class="tests.contracts.ContractTests"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2026-10-18T13:09:14 IST" name="contract" finished-at="2026-10-18T13:09:23 IST" duration-ms="8707">
+      <class name="tests.contracts.ContractTests">
+        <test-method signature="healthContract()[pri:0, instance:tests.contracts.ContractTests@134d26af]" started-at="2026-10-18T13:09:15 IST" name="healthContract" finished-at="2026-10-18T13:09:18 IST" duration-ms="3152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- healthContract -->
+        <test-method signature="publishedReadContracts(java.lang.String,java.lang.String)[pri:0, instance:tests.contracts.ContractTests@134d26af]" started-at="2026-10-18T13:09:18 IST" name="publishedReadContracts" data-provider="contracts" finished-at="2026-10-18T13:09:19 IST" duration-ms="1225" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[room]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Rooms]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- publishedReadContracts -->
+        <test-method signature="publishedReadContracts(java.lang.String,java.lang.String)[pri:0, instance:tests.contracts.ContractTests@134d26af]" started-at="2026-10-18T13:09:19 IST" name="publishedReadContracts" data-provider="contracts" finished-at="2026-10-18T13:09:19 IST" duration-ms="368" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[message]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Messages]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- publishedReadContracts -->
+        <test-method signature="publishedReadContracts(java.lang.String,java.lang.String)[pri:0, instance:tests.contracts.ContractTests@134d26af]" started-at="2026-10-18T13:09:19 IST" name="publishedReadContracts" data-provider="contracts" finished-at="2026-10-18T13:09:20 IST" duration-ms="606" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[branding]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Branding]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- publishedReadContracts -->
+        <test-method signature="publishedReadContracts(java.lang.String,java.lang.String)[pri:0, instance:tests.contracts.ContractTests@134d26af]" started-at="2026-10-18T13:09:20 IST" name="publishedReadContracts" data-provider="contracts" finished-at="2026-10-18T13:09:22 IST" duration-ms="1719" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[report]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Report]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Published schema mismatch for report/Report; compare sanitized HTTP evidence with the versioned schema]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Published schema mismatch for report/Report; compare sanitized HTTP evidence with the versioned schema
+at tests.contracts.ContractTests.publishedReadContracts(ContractTests.java:50)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- publishedReadContracts -->
+        <test-method signature="publishedReadContracts(java.lang.String,java.lang.String)[pri:0, instance:tests.contracts.ContractTests@134d26af]" started-at="2026-10-18T13:09:22 IST" name="publishedReadContracts" data-provider="contracts" finished-at="2026-10-18T13:09:23 IST" duration-ms="1444" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[booking]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bookings]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- publishedReadContracts -->
+      </class> <!-- tests.contracts.ContractTests -->
+    </test> <!-- contract -->
+  </suite> <!-- contract -->
+</testng-results>

@@ -1,0 +1,1891 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-regression" class="navigator-link">
+              <span class="suite-name border-failed">regression</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-regression" class="navigator-link ">
+                    <span>C:\Users\Admin\Documents\Codex\2026-10-18\project-enterprise-grade-rest-assured-java\outputs\rest-assured-java-api-automation\src\test\resources\suites\regression.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-regression" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-regression" class="navigator-link ">
+                    <span>7 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-regression" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-regression" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-regression" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-regression" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">61 methods, 3 failed,   58 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-regression" class="hide-methods failed suite-regression"> (hide)</a> <!-- hide-methods failed suite-regression -->
+                      <a href="#" panel-name="suite-regression" class="show-methods failed suite-regression"> (show)</a> <!-- show-methods failed suite-regression -->
+                    </span>
+                    <div class="method-list-content failed suite-regression">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.room.RoomTests" class="method navigator-link" hash-for-method="invalidSessionCannotCreateRoom">invalidSessionCannotCreateRoom</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.room.RoomTests" class="method navigator-link" hash-for-method="nonexistentRoomReturnsNotFound">nonexistentRoomReturnsNotFound</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.contracts.ContractTests" class="method navigator-link" hash-for-method="publishedReadContracts(report, Report)">publishedReadContracts(report, Report)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-regression -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-regression" class="hide-methods passed suite-regression"> (hide)</a> <!-- hide-methods passed suite-regression -->
+                      <a href="#" panel-name="suite-regression" class="show-methods passed suite-regression"> (show)</a> <!-- show-methods passed suite-regression -->
+                    </span>
+                    <div class="method-list-content passed suite-regression">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.room.RoomTests" class="method navigator-link" hash-for-method="acceptedPriceBoundaries(1)">acceptedPriceBoundaries(1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.room.RoomTests" class="method navigator-link" hash-for-method="acceptedPriceBoundaries(999)">acceptedPriceBoundaries(999)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.branding.BrandingReportTests" class="method navigator-link" hash-for-method="authenticatedReport">authenticatedReport</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.booking.BookingTests" class="method navigator-link" hash-for-method="bookingRoomMessageReportWorkflow">bookingRoomMessageReportWorkflow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.branding.BrandingReportTests" class="method navigator-link" hash-for-method="brandingHasContactAndLocation">brandingHasContactAndLocation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.branding.BrandingReportTests" class="method navigator-link" hash-for-method="brandingUpdateRequiresSession">brandingUpdateRequiresSession</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.message.MessageTests" class="method navigator-link" hash-for-method="createReadMarkReadDelete">createReadMarkReadDelete</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.room.RoomTests" class="method navigator-link" hash-for-method="createRequiresSession">createRequiresSession</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.booking.BookingTests" class="method navigator-link" hash-for-method="filteredBookings">filteredBookings</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.contracts.ContractTests" class="method navigator-link" hash-for-method="healthContract">healthContract</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.message.MessageTests" class="method navigator-link" hash-for-method="individualMessageIsPublic">individualMessageIsPublic</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.booking.BookingTests" class="method navigator-link" hash-for-method="invalidBookingContract(lastname, null)">invalidBookingContract(lastname, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.booking.BookingTests" class="method navigator-link" hash-for-method="invalidBookingContract(firstname, null)">invalidBookingContract(firstname, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.booking.BookingTests" class="method navigator-link" hash-for-method="invalidBookingContract(lastname, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa)">invalidBookingContract(lastname, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.booking.BookingTests" class="method navigator-link" hash-for-method="invalidBookingContract(email, invalid)">invalidBookingContract(email, invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.booking.BookingTests" class="method navigator-link" hash-for-method="invalidBookingContract(firstname, ab)">invalidBookingContract(firstname, ab)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.booking.BookingTests" class="method navigator-link" hash-for-method="invalidBookingContract(phone, 123)">invalidBookingContract(phone, 123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.booking.BookingTests" class="method navigator-link" hash-for-method="invalidBookingContract(lastname, ab)">invalidBookingContract(lastname, ab)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.booking.BookingTests" class="method navigator-link" hash-for-method="invalidBookingContract(roomid, 0)">invalidBookingContract(roomid, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.booking.BookingTests" class="method navigator-link" hash-for-method="invalidBookingContract(firstname, aaaaaaaaaaaaaaaaaaa)">invalidBookingContract(firstname, aaaaaaaaaaaaaaaaaaa)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.auth.AuthTests" class="method navigator-link" hash-for-method="invalidCredentials(missing-username)">invalidCredentials(missing-username)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.auth.AuthTests" class="method navigator-link" hash-for-method="invalidCredentials(wrong-password)">invalidCredentials(wrong-password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.auth.AuthTests" class="method navigator-link" hash-for-method="invalidCredentials(missing-password)">invalidCredentials(missing-password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.message.MessageTests" class="method navigator-link" hash-for-method="invalidMessageContract(email, invalid)">invalidMessageContract(email, invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.message.MessageTests" class="method navigator-link" hash-for-method="invalidMessageContract(description, aaaaaaaaaaaaaaaaaaa)">invalidMessageContract(description, aaaaaaaaaaaaaaaaaaa)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.message.MessageTests" class="method navigator-link" hash-for-method="invalidMessageContract(subject, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...)">invalidMessageContract(subject, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.message.MessageTests" class="method navigator-link" hash-for-method="invalidMessageContract(description, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...)">invalidMessageContract(description, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.message.MessageTests" class="method navigator-link" hash-for-method="invalidMessageContract(name,  )">invalidMessageContract(name,  )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.message.MessageTests" class="method navigator-link" hash-for-method="invalidMessageContract(subject, aaaa)">invalidMessageContract(subject, aaaa)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.message.MessageTests" class="method navigator-link" hash-for-method="invalidMessageContract(phone, 1111111111111111111111)">invalidMessageContract(phone, 1111111111111111111111)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.message.MessageTests" class="method navigator-link" hash-for-method="invalidMessageContract(name, null)">invalidMessageContract(name, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.message.MessageTests" class="method navigator-link" hash-for-method="invalidMessageContract(email, null)">invalidMessageContract(email, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.message.MessageTests" class="method navigator-link" hash-for-method="invalidMessageContract(phone, 1111111111)">invalidMessageContract(phone, 1111111111)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.room.RoomTests" class="method navigator-link" hash-for-method="invalidRoomContract(roomPrice, not-a-number)">invalidRoomContract(roomPrice, not-a-number)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.room.RoomTests" class="method navigator-link" hash-for-method="invalidRoomContract(roomName, )">invalidRoomContract(roomName, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.room.RoomTests" class="method navigator-link" hash-for-method="invalidRoomContract(type, Penthouse)">invalidRoomContract(type, Penthouse)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.room.RoomTests" class="method navigator-link" hash-for-method="invalidRoomContract(type, null)">invalidRoomContract(type, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.room.RoomTests" class="method navigator-link" hash-for-method="invalidRoomContract(roomPrice, 1000)">invalidRoomContract(roomPrice, 1000)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.room.RoomTests" class="method navigator-link" hash-for-method="invalidRoomContract(roomName, null)">invalidRoomContract(roomName, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.room.RoomTests" class="method navigator-link" hash-for-method="invalidRoomContract(roomPrice, 0)">invalidRoomContract(roomPrice, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.room.RoomTests" class="method navigator-link" hash-for-method="invalidRoomIdentifier">invalidRoomIdentifier</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.auth.AuthTests" class="method navigator-link" hash-for-method="invalidToken">invalidToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.room.RoomTests" class="method navigator-link" hash-for-method="isolatedRoomCrud">isolatedRoomCrud</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.booking.BookingTests" class="method navigator-link" hash-for-method="listRequiresAuthentication">listRequiresAuthentication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.booking.BookingTests" class="method navigator-link" hash-for-method="listRequiresRoomFilter">listRequiresRoomFilter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.auth.AuthTests" class="method navigator-link" hash-for-method="logoutRequiresToken">logoutRequiresToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.auth.AuthTests" class="method navigator-link" hash-for-method="missingToken">missingToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.booking.BookingTests" class="method navigator-link" hash-for-method="nonexistentBooking">nonexistentBooking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.booking.BookingTests" class="method navigator-link" hash-for-method="overlappingBookingRejected">overlappingBookingRejected</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.message.MessageTests" class="method navigator-link" hash-for-method="publicMessageList">publicMessageList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.contracts.ContractTests" class="method navigator-link" hash-for-method="publishedReadContracts(room, Rooms)">publishedReadContracts(room, Rooms)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.contracts.ContractTests" class="method navigator-link" hash-for-method="publishedReadContracts(branding, Branding)">publishedReadContracts(branding, Branding)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.contracts.ContractTests" class="method navigator-link" hash-for-method="publishedReadContracts(message, Messages)">publishedReadContracts(message, Messages)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.contracts.ContractTests" class="method navigator-link" hash-for-method="publishedReadContracts(booking, Bookings)">publishedReadContracts(booking, Bookings)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.branding.BrandingReportTests" class="method navigator-link" hash-for-method="reportsRequireSession">reportsRequireSession</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.booking.BookingTests" class="method navigator-link" hash-for-method="reversedDatesRejected">reversedDatesRejected</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.room.RoomTests" class="method navigator-link" hash-for-method="roomsAreReadable">roomsAreReadable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression" title="tests.auth.AuthTests" class="method navigator-link" hash-for-method="validSessionCanBeReused">validSessionCanBeReused</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-regression -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-regression" class="panel regression">
+          <div class="suite-regression-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.contracts.ContractTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="publishedReadContracts(report, Report)">
+                  </a> <!-- publishedReadContracts(report, Report) -->
+                  <span class="method-name">publishedReadContracts</span>
+                  <span class="parameters">(report,Report)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Published schema mismatch for report/Report; compare sanitized HTTP evidence with the versioned schema
+	at tests.contracts.ContractTests.publishedReadContracts(ContractTests.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression-class-failed -->
+          <div class="suite-regression-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.room.RoomTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidSessionCannotCreateRoom">
+                  </a> <!-- invalidSessionCannotCreateRoom -->
+                  <span class="method-name">invalidSessionCannotCreateRoom</span>
+                  <div class="stack-trace">java.lang.AssertionError: HTTP status (sanitized evidence attached on failure) expected [403] but found [500]
+	at tests.support.Checks.status(Checks.java:9)
+	at tests.room.RoomTests.invalidSessionCannotCreateRoom(RoomTests.java:120)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="nonexistentRoomReturnsNotFound">
+                  </a> <!-- nonexistentRoomReturnsNotFound -->
+                  <span class="method-name">nonexistentRoomReturnsNotFound</span>
+                  <div class="stack-trace">java.lang.AssertionError: HTTP status (sanitized evidence attached on failure) expected [404] but found [500]
+	at tests.support.Checks.status(Checks.java:9)
+	at tests.room.RoomTests.nonexistentRoomReturnsNotFound(RoomTests.java:104)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression-class-failed -->
+          <div class="suite-regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.contracts.ContractTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="healthContract">
+                  </a> <!-- healthContract -->
+                  <span class="method-name">healthContract</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="publishedReadContracts(room, Rooms)">
+                  </a> <!-- publishedReadContracts(room, Rooms) -->
+                  <span class="method-name">publishedReadContracts</span>
+                  <span class="parameters">(room,Rooms)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="publishedReadContracts(branding, Branding)">
+                  </a> <!-- publishedReadContracts(branding, Branding) -->
+                  <span class="method-name">publishedReadContracts</span>
+                  <span class="parameters">(branding,Branding)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="publishedReadContracts(message, Messages)">
+                  </a> <!-- publishedReadContracts(message, Messages) -->
+                  <span class="method-name">publishedReadContracts</span>
+                  <span class="parameters">(message,Messages)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="publishedReadContracts(booking, Bookings)">
+                  </a> <!-- publishedReadContracts(booking, Bookings) -->
+                  <span class="method-name">publishedReadContracts</span>
+                  <span class="parameters">(booking,Bookings)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression-class-passed -->
+          <div class="suite-regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.branding.BrandingReportTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="authenticatedReport">
+                  </a> <!-- authenticatedReport -->
+                  <span class="method-name">authenticatedReport</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="brandingHasContactAndLocation">
+                  </a> <!-- brandingHasContactAndLocation -->
+                  <span class="method-name">brandingHasContactAndLocation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="brandingUpdateRequiresSession">
+                  </a> <!-- brandingUpdateRequiresSession -->
+                  <span class="method-name">brandingUpdateRequiresSession</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reportsRequireSession">
+                  </a> <!-- reportsRequireSession -->
+                  <span class="method-name">reportsRequireSession</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression-class-passed -->
+          <div class="suite-regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.auth.AuthTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidCredentials(missing-username)">
+                  </a> <!-- invalidCredentials(missing-username) -->
+                  <span class="method-name">invalidCredentials</span>
+                  <span class="parameters">(missing-username)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidCredentials(wrong-password)">
+                  </a> <!-- invalidCredentials(wrong-password) -->
+                  <span class="method-name">invalidCredentials</span>
+                  <span class="parameters">(wrong-password)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidCredentials(missing-password)">
+                  </a> <!-- invalidCredentials(missing-password) -->
+                  <span class="method-name">invalidCredentials</span>
+                  <span class="parameters">(missing-password)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidToken">
+                  </a> <!-- invalidToken -->
+                  <span class="method-name">invalidToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoutRequiresToken">
+                  </a> <!-- logoutRequiresToken -->
+                  <span class="method-name">logoutRequiresToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="missingToken">
+                  </a> <!-- missingToken -->
+                  <span class="method-name">missingToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validSessionCanBeReused">
+                  </a> <!-- validSessionCanBeReused -->
+                  <span class="method-name">validSessionCanBeReused</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression-class-passed -->
+          <div class="suite-regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.room.RoomTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="acceptedPriceBoundaries(1)">
+                  </a> <!-- acceptedPriceBoundaries(1) -->
+                  <span class="method-name">acceptedPriceBoundaries</span>
+                  <span class="parameters">(1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="acceptedPriceBoundaries(999)">
+                  </a> <!-- acceptedPriceBoundaries(999) -->
+                  <span class="method-name">acceptedPriceBoundaries</span>
+                  <span class="parameters">(999)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createRequiresSession">
+                  </a> <!-- createRequiresSession -->
+                  <span class="method-name">createRequiresSession</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidRoomContract(roomPrice, not-a-number)">
+                  </a> <!-- invalidRoomContract(roomPrice, not-a-number) -->
+                  <span class="method-name">invalidRoomContract</span>
+                  <span class="parameters">(roomPrice,not-a-number)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidRoomContract(roomName, )">
+                  </a> <!-- invalidRoomContract(roomName, ) -->
+                  <span class="method-name">invalidRoomContract</span>
+                  <span class="parameters">(roomName,)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidRoomContract(type, Penthouse)">
+                  </a> <!-- invalidRoomContract(type, Penthouse) -->
+                  <span class="method-name">invalidRoomContract</span>
+                  <span class="parameters">(type,Penthouse)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidRoomContract(type, null)">
+                  </a> <!-- invalidRoomContract(type, null) -->
+                  <span class="method-name">invalidRoomContract</span>
+                  <span class="parameters">(type,null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidRoomContract(roomPrice, 1000)">
+                  </a> <!-- invalidRoomContract(roomPrice, 1000) -->
+                  <span class="method-name">invalidRoomContract</span>
+                  <span class="parameters">(roomPrice,1000)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidRoomContract(roomName, null)">
+                  </a> <!-- invalidRoomContract(roomName, null) -->
+                  <span class="method-name">invalidRoomContract</span>
+                  <span class="parameters">(roomName,null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidRoomContract(roomPrice, 0)">
+                  </a> <!-- invalidRoomContract(roomPrice, 0) -->
+                  <span class="method-name">invalidRoomContract</span>
+                  <span class="parameters">(roomPrice,0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidRoomIdentifier">
+                  </a> <!-- invalidRoomIdentifier -->
+                  <span class="method-name">invalidRoomIdentifier</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="isolatedRoomCrud">
+                  </a> <!-- isolatedRoomCrud -->
+                  <span class="method-name">isolatedRoomCrud</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="roomsAreReadable">
+                  </a> <!-- roomsAreReadable -->
+                  <span class="method-name">roomsAreReadable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression-class-passed -->
+          <div class="suite-regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.message.MessageTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createReadMarkReadDelete">
+                  </a> <!-- createReadMarkReadDelete -->
+                  <span class="method-name">createReadMarkReadDelete</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="individualMessageIsPublic">
+                  </a> <!-- individualMessageIsPublic -->
+                  <span class="method-name">individualMessageIsPublic</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidMessageContract(email, invalid)">
+                  </a> <!-- invalidMessageContract(email, invalid) -->
+                  <span class="method-name">invalidMessageContract</span>
+                  <span class="parameters">(email,invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidMessageContract(description, aaaaaaaaaaaaaaaaaaa)">
+                  </a> <!-- invalidMessageContract(description, aaaaaaaaaaaaaaaaaaa) -->
+                  <span class="method-name">invalidMessageContract</span>
+                  <span class="parameters">(description,aaaaaaaaaaaaaaaaaaa)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidMessageContract(subject, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...)">
+                  </a> <!-- invalidMessageContract(subject, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...) -->
+                  <span class="method-name">invalidMessageContract</span>
+                  <span class="parameters">(subject,aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidMessageContract(description, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...)">
+                  </a> <!-- invalidMessageContract(description, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...) -->
+                  <span class="method-name">invalidMessageContract</span>
+                  <span class="parameters">(description,aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidMessageContract(name,  )">
+                  </a> <!-- invalidMessageContract(name,  ) -->
+                  <span class="method-name">invalidMessageContract</span>
+                  <span class="parameters">(name, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidMessageContract(subject, aaaa)">
+                  </a> <!-- invalidMessageContract(subject, aaaa) -->
+                  <span class="method-name">invalidMessageContract</span>
+                  <span class="parameters">(subject,aaaa)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidMessageContract(phone, 1111111111111111111111)">
+                  </a> <!-- invalidMessageContract(phone, 1111111111111111111111) -->
+                  <span class="method-name">invalidMessageContract</span>
+                  <span class="parameters">(phone,1111111111111111111111)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidMessageContract(name, null)">
+                  </a> <!-- invalidMessageContract(name, null) -->
+                  <span class="method-name">invalidMessageContract</span>
+                  <span class="parameters">(name,null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidMessageContract(email, null)">
+                  </a> <!-- invalidMessageContract(email, null) -->
+                  <span class="method-name">invalidMessageContract</span>
+                  <span class="parameters">(email,null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidMessageContract(phone, 1111111111)">
+                  </a> <!-- invalidMessageContract(phone, 1111111111) -->
+                  <span class="method-name">invalidMessageContract</span>
+                  <span class="parameters">(phone,1111111111)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="publicMessageList">
+                  </a> <!-- publicMessageList -->
+                  <span class="method-name">publicMessageList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression-class-passed -->
+          <div class="suite-regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.booking.BookingTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="bookingRoomMessageReportWorkflow">
+                  </a> <!-- bookingRoomMessageReportWorkflow -->
+                  <span class="method-name">bookingRoomMessageReportWorkflow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="filteredBookings">
+                  </a> <!-- filteredBookings -->
+                  <span class="method-name">filteredBookings</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidBookingContract(lastname, null)">
+                  </a> <!-- invalidBookingContract(lastname, null) -->
+                  <span class="method-name">invalidBookingContract</span>
+                  <span class="parameters">(lastname,null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidBookingContract(firstname, null)">
+                  </a> <!-- invalidBookingContract(firstname, null) -->
+                  <span class="method-name">invalidBookingContract</span>
+                  <span class="parameters">(firstname,null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidBookingContract(lastname, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa)">
+                  </a> <!-- invalidBookingContract(lastname, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa) -->
+                  <span class="method-name">invalidBookingContract</span>
+                  <span class="parameters">(lastname,aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidBookingContract(email, invalid)">
+                  </a> <!-- invalidBookingContract(email, invalid) -->
+                  <span class="method-name">invalidBookingContract</span>
+                  <span class="parameters">(email,invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidBookingContract(firstname, ab)">
+                  </a> <!-- invalidBookingContract(firstname, ab) -->
+                  <span class="method-name">invalidBookingContract</span>
+                  <span class="parameters">(firstname,ab)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidBookingContract(phone, 123)">
+                  </a> <!-- invalidBookingContract(phone, 123) -->
+                  <span class="method-name">invalidBookingContract</span>
+                  <span class="parameters">(phone,123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidBookingContract(lastname, ab)">
+                  </a> <!-- invalidBookingContract(lastname, ab) -->
+                  <span class="method-name">invalidBookingContract</span>
+                  <span class="parameters">(lastname,ab)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidBookingContract(roomid, 0)">
+                  </a> <!-- invalidBookingContract(roomid, 0) -->
+                  <span class="method-name">invalidBookingContract</span>
+                  <span class="parameters">(roomid,0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidBookingContract(firstname, aaaaaaaaaaaaaaaaaaa)">
+                  </a> <!-- invalidBookingContract(firstname, aaaaaaaaaaaaaaaaaaa) -->
+                  <span class="method-name">invalidBookingContract</span>
+                  <span class="parameters">(firstname,aaaaaaaaaaaaaaaaaaa)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="listRequiresAuthentication">
+                  </a> <!-- listRequiresAuthentication -->
+                  <span class="method-name">listRequiresAuthentication</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="listRequiresRoomFilter">
+                  </a> <!-- listRequiresRoomFilter -->
+                  <span class="method-name">listRequiresRoomFilter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="nonexistentBooking">
+                  </a> <!-- nonexistentBooking -->
+                  <span class="method-name">nonexistentBooking</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="overlappingBookingRejected">
+                  </a> <!-- overlappingBookingRejected -->
+                  <span class="method-name">overlappingBookingRejected</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reversedDatesRejected">
+                  </a> <!-- reversedDatesRejected -->
+                  <span class="method-name">reversedDatesRejected</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression-class-passed -->
+        </div> <!-- panel regression -->
+        <div panel-name="test-xml-regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Admin\Documents\Codex\2026-10-18\project-enterprise-grade-rest-assured-java\outputs\rest-assured-java-api-automation\src\test\resources\suites\regression.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; data-provider-thread-count=&quot;1&quot; name=&quot;regression&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;regression&quot; verbose=&quot;0&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;regression&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;tests.auth&quot;/&gt;
+      &lt;package name=&quot;tests.room&quot;/&gt;
+      &lt;package name=&quot;tests.booking&quot;/&gt;
+      &lt;package name=&quot;tests.message&quot;/&gt;
+      &lt;package name=&quot;tests.branding&quot;/&gt;
+      &lt;package name=&quot;tests.contracts&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.auth.AuthTests&quot;/&gt;
+      &lt;class name=&quot;tests.room.RoomTests&quot;/&gt;
+      &lt;class name=&quot;tests.booking.BookingTests&quot;/&gt;
+      &lt;class name=&quot;tests.message.MessageTests&quot;/&gt;
+      &lt;class name=&quot;tests.branding.BrandingReportTests&quot;/&gt;
+      &lt;class name=&quot;tests.contracts.ContractTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- regression --&gt;
+&lt;/suite&gt; &lt;!-- regression --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">regression (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">authorization</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">brandingUpdateRequiresSession</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">createRequiresSession</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">individualMessageIsPublic</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidSessionCannotCreateRoom</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidToken</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">listRequiresAuthentication</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">reportsRequireSession</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">boundary</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">acceptedPriceBoundaries</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidBookingContract</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidMessageContract</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidRoomContract</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">contract</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">healthContract</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">publishedReadContracts</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">integration</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">bookingRoomMessageReportWorkflow</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">createReadMarkReadDelete</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">isolatedRoomCrud</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">overlappingBookingRejected</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">negative</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidBookingContract</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidMessageContract</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidRoomContract</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidRoomIdentifier</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidToken</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">listRequiresRoomFilter</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">logoutRequiresToken</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">missingToken</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">nonexistentBooking</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">nonexistentRoomReturnsNotFound</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">overlappingBookingRejected</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">reversedDatesRejected</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">acceptedPriceBoundaries</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">authenticatedReport</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">bookingRoomMessageReportWorkflow</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">brandingHasContactAndLocation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">brandingUpdateRequiresSession</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">createReadMarkReadDelete</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">createRequiresSession</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">filteredBookings</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">healthContract</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">individualMessageIsPublic</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidBookingContract</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidMessageContract</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidRoomContract</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidRoomIdentifier</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidSessionCannotCreateRoom</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidToken</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">isolatedRoomCrud</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">listRequiresAuthentication</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">listRequiresRoomFilter</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">logoutRequiresToken</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">missingToken</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">nonexistentBooking</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">nonexistentRoomReturnsNotFound</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">overlappingBookingRejected</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">publicMessageList</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">publishedReadContracts</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">reportsRequireSession</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">reversedDatesRejected</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">roomsAreReadable</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validSessionCanBeReused</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">brandingHasContactAndLocation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">filteredBookings</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">healthContract</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">publicMessageList</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">roomsAreReadable</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validSessionCanBeReused</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_regression');
+function tableData_regression() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(61);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'bookingRoomMessageReportWorkflow')
+data.setCell(0, 2, 'tests.booking.BookingTests')
+data.setCell(0, 3, 8803);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'overlappingBookingRejected')
+data.setCell(1, 2, 'tests.booking.BookingTests')
+data.setCell(1, 3, 6085);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'isolatedRoomCrud')
+data.setCell(2, 2, 'tests.room.RoomTests')
+data.setCell(2, 3, 5370);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'acceptedPriceBoundaries')
+data.setCell(3, 2, 'tests.room.RoomTests')
+data.setCell(3, 3, 4922);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'acceptedPriceBoundaries')
+data.setCell(4, 2, 'tests.room.RoomTests')
+data.setCell(4, 3, 4885);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'invalidBookingContract')
+data.setCell(5, 2, 'tests.booking.BookingTests')
+data.setCell(5, 3, 4610);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'createReadMarkReadDelete')
+data.setCell(6, 2, 'tests.message.MessageTests')
+data.setCell(6, 3, 4403);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'invalidBookingContract')
+data.setCell(7, 2, 'tests.booking.BookingTests')
+data.setCell(7, 3, 4283);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'invalidBookingContract')
+data.setCell(8, 2, 'tests.booking.BookingTests')
+data.setCell(8, 3, 4275);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'reversedDatesRejected')
+data.setCell(9, 2, 'tests.booking.BookingTests')
+data.setCell(9, 3, 4194);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'invalidBookingContract')
+data.setCell(10, 2, 'tests.booking.BookingTests')
+data.setCell(10, 3, 4192);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'invalidBookingContract')
+data.setCell(11, 2, 'tests.booking.BookingTests')
+data.setCell(11, 3, 4184);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'invalidBookingContract')
+data.setCell(12, 2, 'tests.booking.BookingTests')
+data.setCell(12, 3, 4177);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'invalidBookingContract')
+data.setCell(13, 2, 'tests.booking.BookingTests')
+data.setCell(13, 3, 4165);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'invalidBookingContract')
+data.setCell(14, 2, 'tests.booking.BookingTests')
+data.setCell(14, 3, 4007);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'invalidBookingContract')
+data.setCell(15, 2, 'tests.booking.BookingTests')
+data.setCell(15, 3, 3947);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'individualMessageIsPublic')
+data.setCell(16, 2, 'tests.message.MessageTests')
+data.setCell(16, 3, 3417);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'invalidCredentials')
+data.setCell(17, 2, 'tests.auth.AuthTests')
+data.setCell(17, 3, 3265);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'validSessionCanBeReused')
+data.setCell(18, 2, 'tests.auth.AuthTests')
+data.setCell(18, 3, 1289);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'publishedReadContracts')
+data.setCell(19, 2, 'tests.contracts.ContractTests')
+data.setCell(19, 3, 1202);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'filteredBookings')
+data.setCell(20, 2, 'tests.booking.BookingTests')
+data.setCell(20, 3, 1132);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'invalidRoomContract')
+data.setCell(21, 2, 'tests.room.RoomTests')
+data.setCell(21, 3, 1017);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'publishedReadContracts')
+data.setCell(22, 2, 'tests.contracts.ContractTests')
+data.setCell(22, 3, 1016);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'invalidRoomContract')
+data.setCell(23, 2, 'tests.room.RoomTests')
+data.setCell(23, 3, 947);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'roomsAreReadable')
+data.setCell(24, 2, 'tests.room.RoomTests')
+data.setCell(24, 3, 837);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'authenticatedReport')
+data.setCell(25, 2, 'tests.branding.BrandingReportTests')
+data.setCell(25, 3, 816);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'invalidRoomContract')
+data.setCell(26, 2, 'tests.room.RoomTests')
+data.setCell(26, 3, 791);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'invalidRoomContract')
+data.setCell(27, 2, 'tests.room.RoomTests')
+data.setCell(27, 3, 735);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'nonexistentBooking')
+data.setCell(28, 2, 'tests.booking.BookingTests')
+data.setCell(28, 3, 726);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'publishedReadContracts')
+data.setCell(29, 2, 'tests.contracts.ContractTests')
+data.setCell(29, 3, 710);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'invalidRoomContract')
+data.setCell(30, 2, 'tests.room.RoomTests')
+data.setCell(30, 3, 648);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'invalidCredentials')
+data.setCell(31, 2, 'tests.auth.AuthTests')
+data.setCell(31, 3, 629);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'invalidRoomContract')
+data.setCell(32, 2, 'tests.room.RoomTests')
+data.setCell(32, 3, 627);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'publishedReadContracts')
+data.setCell(33, 2, 'tests.contracts.ContractTests')
+data.setCell(33, 3, 610);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'invalidRoomContract')
+data.setCell(34, 2, 'tests.room.RoomTests')
+data.setCell(34, 3, 604);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'invalidMessageContract')
+data.setCell(35, 2, 'tests.message.MessageTests')
+data.setCell(35, 3, 548);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'listRequiresRoomFilter')
+data.setCell(36, 2, 'tests.booking.BookingTests')
+data.setCell(36, 3, 536);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'invalidToken')
+data.setCell(37, 2, 'tests.auth.AuthTests')
+data.setCell(37, 3, 497);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'invalidSessionCannotCreateRoom')
+data.setCell(38, 2, 'tests.room.RoomTests')
+data.setCell(38, 3, 485);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'invalidCredentials')
+data.setCell(39, 2, 'tests.auth.AuthTests')
+data.setCell(39, 3, 478);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'publicMessageList')
+data.setCell(40, 2, 'tests.message.MessageTests')
+data.setCell(40, 3, 475);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'invalidMessageContract')
+data.setCell(41, 2, 'tests.message.MessageTests')
+data.setCell(41, 3, 471);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'reportsRequireSession')
+data.setCell(42, 2, 'tests.branding.BrandingReportTests')
+data.setCell(42, 3, 467);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'missingToken')
+data.setCell(43, 2, 'tests.auth.AuthTests')
+data.setCell(43, 3, 446);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'logoutRequiresToken')
+data.setCell(44, 2, 'tests.auth.AuthTests')
+data.setCell(44, 3, 429);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'invalidMessageContract')
+data.setCell(45, 2, 'tests.message.MessageTests')
+data.setCell(45, 3, 426);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'listRequiresAuthentication')
+data.setCell(46, 2, 'tests.booking.BookingTests')
+data.setCell(46, 3, 416);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'nonexistentRoomReturnsNotFound')
+data.setCell(47, 2, 'tests.room.RoomTests')
+data.setCell(47, 3, 406);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'invalidMessageContract')
+data.setCell(48, 2, 'tests.message.MessageTests')
+data.setCell(48, 3, 405);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'brandingHasContactAndLocation')
+data.setCell(49, 2, 'tests.branding.BrandingReportTests')
+data.setCell(49, 3, 402);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'invalidMessageContract')
+data.setCell(50, 2, 'tests.message.MessageTests')
+data.setCell(50, 3, 401);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'invalidMessageContract')
+data.setCell(51, 2, 'tests.message.MessageTests')
+data.setCell(51, 3, 358);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'invalidMessageContract')
+data.setCell(52, 2, 'tests.message.MessageTests')
+data.setCell(52, 3, 322);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'invalidRoomIdentifier')
+data.setCell(53, 2, 'tests.room.RoomTests')
+data.setCell(53, 3, 312);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'publishedReadContracts')
+data.setCell(54, 2, 'tests.contracts.ContractTests')
+data.setCell(54, 3, 274);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'createRequiresSession')
+data.setCell(55, 2, 'tests.room.RoomTests')
+data.setCell(55, 3, 260);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'healthContract')
+data.setCell(56, 2, 'tests.contracts.ContractTests')
+data.setCell(56, 3, 253);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'invalidMessageContract')
+data.setCell(57, 2, 'tests.message.MessageTests')
+data.setCell(57, 3, 247);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'brandingUpdateRequiresSession')
+data.setCell(58, 2, 'tests.branding.BrandingReportTests')
+data.setCell(58, 3, 240);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'invalidMessageContract')
+data.setCell(59, 2, 'tests.message.MessageTests')
+data.setCell(59, 3, 235);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'invalidMessageContract')
+data.setCell(60, 2, 'tests.message.MessageTests')
+data.setCell(60, 3, 233);
+window.suiteTableData['regression']= { tableData: data, tableDiv: 'times-div-regression'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-regression">
+              </div> <!-- times-div-regression -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.auth.AuthTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">invalidCredentials(wrong-password)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidCredentials(missing-password)</span>
+                <span class="method-start">3353 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidCredentials(missing-username)</span>
+                <span class="method-start">3835 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidToken</span>
+                <span class="method-start">4469 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">logoutRequiresToken</span>
+                <span class="method-start">4968 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">missingToken</span>
+                <span class="method-start">5399 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validSessionCanBeReused</span>
+                <span class="method-start">5847 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.room.RoomTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">acceptedPriceBoundaries(1)</span>
+                <span class="method-start">7138 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">acceptedPriceBoundaries(999)</span>
+                <span class="method-start">12026 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createRequiresSession</span>
+                <span class="method-start">16950 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidRoomContract(roomName, null)</span>
+                <span class="method-start">17213 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidRoomContract(roomName, )</span>
+                <span class="method-start">18231 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidRoomContract(type, null)</span>
+                <span class="method-start">19180 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidRoomContract(type, Penthouse)</span>
+                <span class="method-start">19917 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidRoomContract(roomPrice, 0)</span>
+                <span class="method-start">20568 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidRoomContract(roomPrice, 1000)</span>
+                <span class="method-start">21361 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidRoomContract(roomPrice, not-a-number)</span>
+                <span class="method-start">21993 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidRoomIdentifier</span>
+                <span class="method-start">22599 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">invalidSessionCannotCreateRoom</span>
+                <span class="method-start">22914 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">isolatedRoomCrud</span>
+                <span class="method-start">23415 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">nonexistentRoomReturnsNotFound</span>
+                <span class="method-start">28787 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">roomsAreReadable</span>
+                <span class="method-start">29196 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.booking.BookingTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">bookingRoomMessageReportWorkflow</span>
+                <span class="method-start">30036 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">filteredBookings</span>
+                <span class="method-start">38841 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidBookingContract(firstname, null)</span>
+                <span class="method-start">39976 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidBookingContract(firstname, ab)</span>
+                <span class="method-start">44154 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidBookingContract(firstname, aaaaaaaaaaaaaaaaaaa)</span>
+                <span class="method-start">48765 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidBookingContract(lastname, null)</span>
+                <span class="method-start">52933 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidBookingContract(lastname, ab)</span>
+                <span class="method-start">56942 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidBookingContract(lastname, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa)</span>
+                <span class="method-start">61136 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidBookingContract(roomid, 0)</span>
+                <span class="method-start">65322 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidBookingContract(email, invalid)</span>
+                <span class="method-start">69271 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidBookingContract(phone, 123)</span>
+                <span class="method-start">73548 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">listRequiresAuthentication</span>
+                <span class="method-start">77833 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">listRequiresRoomFilter</span>
+                <span class="method-start">78251 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">nonexistentBooking</span>
+                <span class="method-start">78788 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">overlappingBookingRejected</span>
+                <span class="method-start">79517 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reversedDatesRejected</span>
+                <span class="method-start">85604 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.message.MessageTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createReadMarkReadDelete</span>
+                <span class="method-start">89804 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">individualMessageIsPublic</span>
+                <span class="method-start">94208 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidMessageContract(name, null)</span>
+                <span class="method-start">97627 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidMessageContract(name,  )</span>
+                <span class="method-start">98033 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidMessageContract(email, null)</span>
+                <span class="method-start">98462 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidMessageContract(email, invalid)</span>
+                <span class="method-start">98711 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidMessageContract(phone, 1111111111)</span>
+                <span class="method-start">99072 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidMessageContract(phone, 1111111111111111111111)</span>
+                <span class="method-start">99475 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidMessageContract(subject, aaaa)</span>
+                <span class="method-start">100025 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidMessageContract(subject, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...)</span>
+                <span class="method-start">100261 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidMessageContract(description, aaaaaaaaaaaaaaaaaaa)</span>
+                <span class="method-start">100732 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidMessageContract(description, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...)</span>
+                <span class="method-start">100967 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">publicMessageList</span>
+                <span class="method-start">101292 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.branding.BrandingReportTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">authenticatedReport</span>
+                <span class="method-start">101769 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">brandingHasContactAndLocation</span>
+                <span class="method-start">102587 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">brandingUpdateRequiresSession</span>
+                <span class="method-start">102992 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reportsRequireSession</span>
+                <span class="method-start">103234 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.contracts.ContractTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">healthContract</span>
+                <span class="method-start">103703 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">publishedReadContracts(room, Rooms)</span>
+                <span class="method-start">103957 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">publishedReadContracts(message, Messages)</span>
+                <span class="method-start">104668 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">publishedReadContracts(branding, Branding)</span>
+                <span class="method-start">104944 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">publishedReadContracts(report, Report)</span>
+                <span class="method-start">105556 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">publishedReadContracts(booking, Bookings)</span>
+                <span class="method-start">106578 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

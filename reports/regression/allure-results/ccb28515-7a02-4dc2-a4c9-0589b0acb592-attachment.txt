@@ -1,0 +1,6 @@
+POST https://automationintesting.online/api/room
+Accept: application/json; Content-Type: application/json
+Credentials/cookies/headers omitted
+{"roomName":"SDETa866e16ba3","type":"Single","accessible":true,"image":"/images/room1.jpg","description":"[REDACTED]","features":["WiFi","TV"],"roomPrice":123}
+HTTP 500
+{"errors":["An unexpected error occurred"]}

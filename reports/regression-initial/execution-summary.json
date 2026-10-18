@@ -1,0 +1,401 @@
+{
+  "baseUri" : "https://automationintesting.online",
+  "generatedAt" : "2026-10-18T07:37:15.098700400Z",
+  "total" : 61,
+  "passed" : 57,
+  "failed" : 4,
+  "skipped" : 0,
+  "scopes" : {
+    "smoke" : {
+      "passed" : 6,
+      "failed" : 0,
+      "skipped" : 0
+    },
+    "regression" : {
+      "passed" : 57,
+      "failed" : 4,
+      "skipped" : 0
+    },
+    "contract" : {
+      "passed" : 5,
+      "failed" : 1,
+      "skipped" : 0
+    },
+    "integration" : {
+      "passed" : 4,
+      "failed" : 0,
+      "skipped" : 0
+    }
+  },
+  "tests" : [ {
+    "name" : "tests.auth.AuthTests.invalidCredentials",
+    "groups" : [ "authorization", "negative", "regression" ],
+    "parameters" : [ "wrong-password" ],
+    "status" : "passed",
+    "durationMs" : 3536
+  }, {
+    "name" : "tests.auth.AuthTests.invalidCredentials",
+    "groups" : [ "authorization", "negative", "regression" ],
+    "parameters" : [ "missing-password" ],
+    "status" : "passed",
+    "durationMs" : 652
+  }, {
+    "name" : "tests.auth.AuthTests.invalidCredentials",
+    "groups" : [ "authorization", "negative", "regression" ],
+    "parameters" : [ "missing-username" ],
+    "status" : "passed",
+    "durationMs" : 462
+  }, {
+    "name" : "tests.auth.AuthTests.invalidToken",
+    "groups" : [ "authorization", "negative", "regression" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 499
+  }, {
+    "name" : "tests.auth.AuthTests.logoutRequiresToken",
+    "groups" : [ "negative", "regression" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 617
+  }, {
+    "name" : "tests.auth.AuthTests.missingToken",
+    "groups" : [ "negative", "regression" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 270
+  }, {
+    "name" : "tests.auth.AuthTests.validSessionCanBeReused",
+    "groups" : [ "regression", "smoke" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 1263
+  }, {
+    "name" : "tests.room.RoomTests.acceptedPriceBoundaries",
+    "groups" : [ "boundary", "regression" ],
+    "parameters" : [ "1" ],
+    "status" : "passed",
+    "durationMs" : 4964
+  }, {
+    "name" : "tests.room.RoomTests.acceptedPriceBoundaries",
+    "groups" : [ "boundary", "regression" ],
+    "parameters" : [ "999" ],
+    "status" : "passed",
+    "durationMs" : 4395
+  }, {
+    "name" : "tests.room.RoomTests.createRequiresSession",
+    "groups" : [ "authorization", "regression" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 528
+  }, {
+    "name" : "tests.room.RoomTests.invalidRoomContract",
+    "groups" : [ "boundary", "negative", "regression" ],
+    "parameters" : [ "roomName", "null" ],
+    "status" : "passed",
+    "durationMs" : 772
+  }, {
+    "name" : "tests.room.RoomTests.invalidRoomContract",
+    "groups" : [ "boundary", "negative", "regression" ],
+    "parameters" : [ "roomName", "" ],
+    "status" : "passed",
+    "durationMs" : 794
+  }, {
+    "name" : "tests.room.RoomTests.invalidRoomContract",
+    "groups" : [ "boundary", "negative", "regression" ],
+    "parameters" : [ "type", "null" ],
+    "status" : "passed",
+    "durationMs" : 750
+  }, {
+    "name" : "tests.room.RoomTests.invalidRoomContract",
+    "groups" : [ "boundary", "negative", "regression" ],
+    "parameters" : [ "type", "Penthouse" ],
+    "status" : "passed",
+    "durationMs" : 598
+  }, {
+    "name" : "tests.room.RoomTests.invalidRoomContract",
+    "groups" : [ "boundary", "negative", "regression" ],
+    "parameters" : [ "roomPrice", "0" ],
+    "status" : "passed",
+    "durationMs" : 664
+  }, {
+    "name" : "tests.room.RoomTests.invalidRoomContract",
+    "groups" : [ "boundary", "negative", "regression" ],
+    "parameters" : [ "roomPrice", "1000" ],
+    "status" : "passed",
+    "durationMs" : 644
+  }, {
+    "name" : "tests.room.RoomTests.invalidRoomContract",
+    "groups" : [ "boundary", "negative", "regression" ],
+    "parameters" : [ "roomPrice", "not-a-number" ],
+    "status" : "passed",
+    "durationMs" : 809
+  }, {
+    "name" : "tests.room.RoomTests.invalidRoomIdentifier",
+    "groups" : [ "negative", "regression" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 658
+  }, {
+    "name" : "tests.room.RoomTests.invalidSessionCannotCreateRoom",
+    "groups" : [ "authorization", "regression" ],
+    "parameters" : [ ],
+    "status" : "failed",
+    "durationMs" : 595,
+    "failure" : "java.lang.AssertionError"
+  }, {
+    "name" : "tests.room.RoomTests.isolatedRoomCrud",
+    "groups" : [ "regression", "integration" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 5096
+  }, {
+    "name" : "tests.room.RoomTests.nonexistentRoomReturnsNotFound",
+    "groups" : [ "negative", "regression" ],
+    "parameters" : [ ],
+    "status" : "failed",
+    "durationMs" : 252,
+    "failure" : "java.lang.AssertionError"
+  }, {
+    "name" : "tests.room.RoomTests.roomsAreReadable",
+    "groups" : [ "regression", "smoke" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 867
+  }, {
+    "name" : "tests.booking.BookingTests.bookingRoomMessageReportWorkflow",
+    "groups" : [ "regression", "integration" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 8475
+  }, {
+    "name" : "tests.booking.BookingTests.filteredBookings",
+    "groups" : [ "regression", "smoke" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 1239
+  }, {
+    "name" : "tests.booking.BookingTests.invalidBookingContract",
+    "groups" : [ "boundary", "negative", "regression" ],
+    "parameters" : [ "firstname", "null" ],
+    "status" : "passed",
+    "durationMs" : 3983
+  }, {
+    "name" : "tests.booking.BookingTests.invalidBookingContract",
+    "groups" : [ "boundary", "negative", "regression" ],
+    "parameters" : [ "firstname", "ab" ],
+    "status" : "passed",
+    "durationMs" : 4175
+  }, {
+    "name" : "tests.booking.BookingTests.invalidBookingContract",
+    "groups" : [ "boundary", "negative", "regression" ],
+    "parameters" : [ "firstname", "aaaaaaaaaaaaaaaaaaa" ],
+    "status" : "passed",
+    "durationMs" : 4458
+  }, {
+    "name" : "tests.booking.BookingTests.invalidBookingContract",
+    "groups" : [ "boundary", "negative", "regression" ],
+    "parameters" : [ "lastname", "null" ],
+    "status" : "passed",
+    "durationMs" : 3644
+  }, {
+    "name" : "tests.booking.BookingTests.invalidBookingContract",
+    "groups" : [ "boundary", "negative", "regression" ],
+    "parameters" : [ "lastname", "ab" ],
+    "status" : "passed",
+    "durationMs" : 3981
+  }, {
+    "name" : "tests.booking.BookingTests.invalidBookingContract",
+    "groups" : [ "boundary", "negative", "regression" ],
+    "parameters" : [ "lastname", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" ],
+    "status" : "passed",
+    "durationMs" : 4419
+  }, {
+    "name" : "tests.booking.BookingTests.invalidBookingContract",
+    "groups" : [ "boundary", "negative", "regression" ],
+    "parameters" : [ "roomid", "0" ],
+    "status" : "passed",
+    "durationMs" : 4291
+  }, {
+    "name" : "tests.booking.BookingTests.invalidBookingContract",
+    "groups" : [ "boundary", "negative", "regression" ],
+    "parameters" : [ "email", "invalid" ],
+    "status" : "passed",
+    "durationMs" : 4119
+  }, {
+    "name" : "tests.booking.BookingTests.invalidBookingContract",
+    "groups" : [ "boundary", "negative", "regression" ],
+    "parameters" : [ "phone", "123" ],
+    "status" : "passed",
+    "durationMs" : 4256
+  }, {
+    "name" : "tests.booking.BookingTests.listRequiresAuthentication",
+    "groups" : [ "authorization", "regression" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 243
+  }, {
+    "name" : "tests.booking.BookingTests.listRequiresRoomFilter",
+    "groups" : [ "negative", "regression" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 788
+  }, {
+    "name" : "tests.booking.BookingTests.nonexistentBooking",
+    "groups" : [ "negative", "regression" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 879
+  }, {
+    "name" : "tests.booking.BookingTests.overlappingBookingRejected",
+    "groups" : [ "negative", "regression", "integration" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 6411
+  }, {
+    "name" : "tests.booking.BookingTests.reversedDatesRejected",
+    "groups" : [ "negative", "regression" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 4761
+  }, {
+    "name" : "tests.message.MessageTests.createReadMarkReadDelete",
+    "groups" : [ "regression", "integration" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 4009
+  }, {
+    "name" : "tests.message.MessageTests.individualMessageRequiresSession",
+    "groups" : [ "authorization", "regression" ],
+    "parameters" : [ ],
+    "status" : "failed",
+    "durationMs" : 487,
+    "failure" : "java.lang.AssertionError"
+  }, {
+    "name" : "tests.message.MessageTests.invalidMessageContract",
+    "groups" : [ "boundary", "negative", "regression" ],
+    "parameters" : [ "name", "null" ],
+    "status" : "passed",
+    "durationMs" : 238
+  }, {
+    "name" : "tests.message.MessageTests.invalidMessageContract",
+    "groups" : [ "boundary", "negative", "regression" ],
+    "parameters" : [ "name", " " ],
+    "status" : "passed",
+    "durationMs" : 636
+  }, {
+    "name" : "tests.message.MessageTests.invalidMessageContract",
+    "groups" : [ "boundary", "negative", "regression" ],
+    "parameters" : [ "email", "null" ],
+    "status" : "passed",
+    "durationMs" : 407
+  }, {
+    "name" : "tests.message.MessageTests.invalidMessageContract",
+    "groups" : [ "boundary", "negative", "regression" ],
+    "parameters" : [ "email", "invalid" ],
+    "status" : "passed",
+    "durationMs" : 721
+  }, {
+    "name" : "tests.message.MessageTests.invalidMessageContract",
+    "groups" : [ "boundary", "negative", "regression" ],
+    "parameters" : [ "phone", "1111111111" ],
+    "status" : "passed",
+    "durationMs" : 340
+  }, {
+    "name" : "tests.message.MessageTests.invalidMessageContract",
+    "groups" : [ "boundary", "negative", "regression" ],
+    "parameters" : [ "phone", "1111111111111111111111" ],
+    "status" : "passed",
+    "durationMs" : 398
+  }, {
+    "name" : "tests.message.MessageTests.invalidMessageContract",
+    "groups" : [ "boundary", "negative", "regression" ],
+    "parameters" : [ "subject", "aaaa" ],
+    "status" : "passed",
+    "durationMs" : 416
+  }, {
+    "name" : "tests.message.MessageTests.invalidMessageContract",
+    "groups" : [ "boundary", "negative", "regression" ],
+    "parameters" : [ "subject", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" ],
+    "status" : "passed",
+    "durationMs" : 414
+  }, {
+    "name" : "tests.message.MessageTests.invalidMessageContract",
+    "groups" : [ "boundary", "negative", "regression" ],
+    "parameters" : [ "description", "aaaaaaaaaaaaaaaaaaa" ],
+    "status" : "passed",
+    "durationMs" : 236
+  }, {
+    "name" : "tests.message.MessageTests.invalidMessageContract",
+    "groups" : [ "boundary", "negative", "regression" ],
+    "parameters" : [ "description", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" ],
+    "status" : "passed",
+    "durationMs" : 301
+  }, {
+    "name" : "tests.message.MessageTests.publicMessageList",
+    "groups" : [ "regression", "smoke" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 478
+  }, {
+    "name" : "tests.branding.BrandingReportTests.authenticatedReport",
+    "groups" : [ "regression" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 888
+  }, {
+    "name" : "tests.branding.BrandingReportTests.brandingHasContactAndLocation",
+    "groups" : [ "regression", "smoke" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 430
+  }, {
+    "name" : "tests.branding.BrandingReportTests.brandingUpdateRequiresSession",
+    "groups" : [ "authorization", "regression" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 261
+  }, {
+    "name" : "tests.branding.BrandingReportTests.reportsRequireSession",
+    "groups" : [ "authorization", "regression" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 288
+  }, {
+    "name" : "tests.contracts.ContractTests.healthContract",
+    "groups" : [ "regression", "contract", "smoke" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 363
+  }, {
+    "name" : "tests.contracts.ContractTests.publishedReadContracts",
+    "groups" : [ "regression", "contract" ],
+    "parameters" : [ "room", "Rooms" ],
+    "status" : "passed",
+    "durationMs" : 1004
+  }, {
+    "name" : "tests.contracts.ContractTests.publishedReadContracts",
+    "groups" : [ "regression", "contract" ],
+    "parameters" : [ "message", "Messages" ],
+    "status" : "passed",
+    "durationMs" : 574
+  }, {
+    "name" : "tests.contracts.ContractTests.publishedReadContracts",
+    "groups" : [ "regression", "contract" ],
+    "parameters" : [ "branding", "Branding" ],
+    "status" : "passed",
+    "durationMs" : 425
+  }, {
+    "name" : "tests.contracts.ContractTests.publishedReadContracts",
+    "groups" : [ "regression", "contract" ],
+    "parameters" : [ "report", "Report" ],
+    "status" : "failed",
+    "durationMs" : 809,
+    "failure" : "java.lang.AssertionError"
+  }, {
+    "name" : "tests.contracts.ContractTests.publishedReadContracts",
+    "groups" : [ "regression", "contract" ],
+    "parameters" : [ "booking", "Bookings" ],
+    "status" : "passed",
+    "durationMs" : 1117
+  } ]
+}

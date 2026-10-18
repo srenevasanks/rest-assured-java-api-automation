@@ -30,7 +30,7 @@ The official Postman page was inspected but its dynamic documentation did not ex
 | Auth | POST login, validate, logout | username/password; token body; gateway logout source is a no-op, so revocation must not be assumed |
 | Room | GET/POST collection; GET/PUT/DELETE ID | numeric room ID; optional checkin/checkout; cookie for mutations; price 1–999; five room types |
 | Booking | GET/POST collection; GET/PUT/DELETE ID; GET summary, unavailable | roomid query required by gateway list/summary; date query for unavailable; cookie for reads/update/delete; create is public |
-| Message | GET/POST collection; GET/DELETE ID; PUT ID/read | create is public; gateway requires cookie for individual read/delete/read-state; no arbitrary content update |
+| Message | GET/POST collection; GET/DELETE ID; PUT ID/read | create is public; Java individual read is public; gateway source describes cookie restrictions, but deployed ID routes differ; mutations require auth; no arbitrary content update |
 | Branding | GET/PUT collection | public read, cookie for update; global shared state is not modified |
 | Report | GET collection; GET room/ID | cookie for aggregate; room report relates to booking dates |
 

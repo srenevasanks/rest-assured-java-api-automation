@@ -1,0 +1,67 @@
+{
+  "baseUri" : "https://automationintesting.online",
+  "generatedAt" : "2026-10-18T07:30:21.493132400Z",
+  "total" : 6,
+  "passed" : 6,
+  "failed" : 0,
+  "skipped" : 0,
+  "scopes" : {
+    "smoke" : {
+      "passed" : 6,
+      "failed" : 0,
+      "skipped" : 0
+    },
+    "regression" : {
+      "passed" : 6,
+      "failed" : 0,
+      "skipped" : 0
+    },
+    "contract" : {
+      "passed" : 1,
+      "failed" : 0,
+      "skipped" : 0
+    },
+    "integration" : {
+      "passed" : 0,
+      "failed" : 0,
+      "skipped" : 0
+    }
+  },
+  "tests" : [ {
+    "name" : "tests.auth.AuthTests.validSessionCanBeReused",
+    "groups" : [ "regression", "smoke" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 4462
+  }, {
+    "name" : "tests.room.RoomTests.roomsAreReadable",
+    "groups" : [ "regression", "smoke" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 968
+  }, {
+    "name" : "tests.booking.BookingTests.filteredBookings",
+    "groups" : [ "regression", "smoke" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 1745
+  }, {
+    "name" : "tests.message.MessageTests.publicMessageList",
+    "groups" : [ "regression", "smoke" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 845
+  }, {
+    "name" : "tests.branding.BrandingReportTests.brandingHasContactAndLocation",
+    "groups" : [ "regression", "smoke" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 349
+  }, {
+    "name" : "tests.contracts.ContractTests.healthContract",
+    "groups" : [ "regression", "contract", "smoke" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 602
+  } ]
+}

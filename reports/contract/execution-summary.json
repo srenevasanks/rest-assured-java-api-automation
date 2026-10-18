@@ -1,0 +1,68 @@
+{
+  "baseUri" : "https://automationintesting.online",
+  "generatedAt" : "2026-10-18T07:39:23.797751200Z",
+  "total" : 6,
+  "passed" : 5,
+  "failed" : 1,
+  "skipped" : 0,
+  "scopes" : {
+    "smoke" : {
+      "passed" : 1,
+      "failed" : 0,
+      "skipped" : 0
+    },
+    "regression" : {
+      "passed" : 5,
+      "failed" : 1,
+      "skipped" : 0
+    },
+    "contract" : {
+      "passed" : 5,
+      "failed" : 1,
+      "skipped" : 0
+    },
+    "integration" : {
+      "passed" : 0,
+      "failed" : 0,
+      "skipped" : 0
+    }
+  },
+  "tests" : [ {
+    "name" : "tests.contracts.ContractTests.healthContract",
+    "groups" : [ "regression", "contract", "smoke" ],
+    "parameters" : [ ],
+    "status" : "passed",
+    "durationMs" : 3152
+  }, {
+    "name" : "tests.contracts.ContractTests.publishedReadContracts",
+    "groups" : [ "regression", "contract" ],
+    "parameters" : [ "room", "Rooms" ],
+    "status" : "passed",
+    "durationMs" : 1225
+  }, {
+    "name" : "tests.contracts.ContractTests.publishedReadContracts",
+    "groups" : [ "regression", "contract" ],
+    "parameters" : [ "message", "Messages" ],
+    "status" : "passed",
+    "durationMs" : 368
+  }, {
+    "name" : "tests.contracts.ContractTests.publishedReadContracts",
+    "groups" : [ "regression", "contract" ],
+    "parameters" : [ "branding", "Branding" ],
+    "status" : "passed",
+    "durationMs" : 606
+  }, {
+    "name" : "tests.contracts.ContractTests.publishedReadContracts",
+    "groups" : [ "regression", "contract" ],
+    "parameters" : [ "report", "Report" ],
+    "status" : "failed",
+    "durationMs" : 1719,
+    "failure" : "java.lang.AssertionError"
+  }, {
+    "name" : "tests.contracts.ContractTests.publishedReadContracts",
+    "groups" : [ "regression", "contract" ],
+    "parameters" : [ "booking", "Bookings" ],
+    "status" : "passed",
+    "durationMs" : 1444
+  } ]
+}

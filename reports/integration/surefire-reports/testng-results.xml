@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="27" total="31" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-10-18T13:03:43 IST" name="integration" finished-at="2026-10-18T13:04:12 IST" duration-ms="28454">
+    <groups>
+      <group name="negative">
+        <method signature="BookingTests.overlappingBookingRejected()[pri:0, instance:tests.booking.BookingTests@421bba99]" name="overlappingBookingRejected" class="tests.booking.BookingTests"/>
+      </group> <!-- negative -->
+      <group name="regression">
+        <method signature="BookingTests.bookingRoomMessageReportWorkflow()[pri:0, instance:tests.booking.BookingTests@421bba99]" name="bookingRoomMessageReportWorkflow" class="tests.booking.BookingTests"/>
+        <method signature="BookingTests.overlappingBookingRejected()[pri:0, instance:tests.booking.BookingTests@421bba99]" name="overlappingBookingRejected" class="tests.booking.BookingTests"/>
+        <method signature="MessageTests.createReadMarkReadDelete()[pri:0, instance:tests.message.MessageTests@5d12a356]" name="createReadMarkReadDelete" class="tests.message.MessageTests"/>
+        <method signature="RoomTests.isolatedRoomCrud()[pri:0, instance:tests.room.RoomTests@6ee6f53]" name="isolatedRoomCrud" class="tests.room.RoomTests"/>
+      </group> <!-- regression -->
+      <group name="integration">
+        <method signature="BookingTests.bookingRoomMessageReportWorkflow()[pri:0, instance:tests.booking.BookingTests@421bba99]" name="bookingRoomMessageReportWorkflow" class="tests.booking.BookingTests"/>
+        <method signature="BookingTests.overlappingBookingRejected()[pri:0, instance:tests.booking.BookingTests@421bba99]" name="overlappingBookingRejected" class="tests.booking.BookingTests"/>
+        <method signature="MessageTests.createReadMarkReadDelete()[pri:0, instance:tests.message.MessageTests@5d12a356]" name="createReadMarkReadDelete" class="tests.message.MessageTests"/>
+        <method signature="RoomTests.isolatedRoomCrud()[pri:0, instance:tests.room.RoomTests@6ee6f53]" name="isolatedRoomCrud" class="tests.room.RoomTests"/>
+      </group> <!-- integration -->
+    </groups>
+    <test started-at="2026-10-18T13:03:43 IST" name="integration" finished-at="2026-10-18T13:04:12 IST" duration-ms="28454">
+      <class name="tests.room.RoomTests">
+        <test-method signature="isolatedRoomCrud()[pri:0, instance:tests.room.RoomTests@6ee6f53]" started-at="2026-10-18T13:03:44 IST" name="isolatedRoomCrud" finished-at="2026-10-18T13:03:52 IST" duration-ms="8656" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isolatedRoomCrud -->
+      </class> <!-- tests.room.RoomTests -->
+      <class name="tests.booking.BookingTests">
+        <test-method signature="bookingRoomMessageReportWorkflow()[pri:0, instance:tests.booking.BookingTests@421bba99]" started-at="2026-10-18T13:03:52 IST" name="bookingRoomMessageReportWorkflow" finished-at="2026-10-18T13:04:01 IST" duration-ms="8937" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookingRoomMessageReportWorkflow -->
+        <test-method signature="overlappingBookingRejected()[pri:0, instance:tests.booking.BookingTests@421bba99]" started-at="2026-10-18T13:04:01 IST" name="overlappingBookingRejected" finished-at="2026-10-18T13:04:08 IST" duration-ms="6653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- overlappingBookingRejected -->
+      </class> <!-- tests.booking.BookingTests -->
+      <class name="tests.message.MessageTests">
+        <test-method signature="createReadMarkReadDelete()[pri:0, instance:tests.message.MessageTests@5d12a356]" started-at="2026-10-18T13:04:08 IST" name="createReadMarkReadDelete" finished-at="2026-10-18T13:04:12 IST" duration-ms="4027" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createReadMarkReadDelete -->
+      </class> <!-- tests.message.MessageTests -->
+    </test> <!-- integration -->
+  </suite> <!-- integration -->
+</testng-results>

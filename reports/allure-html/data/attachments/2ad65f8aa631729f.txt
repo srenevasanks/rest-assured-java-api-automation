@@ -1,0 +1,6 @@
+GET https://automationintesting.online/api/room/2147483647
+Accept: application/json; Content-Type: application/json
+Credentials/cookies/headers omitted
+<empty>
+HTTP 500
+{"timestamp":"2026-10-18T07:40:44.690Z","status":500,"error":"Internal Server Error","path":"/room/2147483647"}

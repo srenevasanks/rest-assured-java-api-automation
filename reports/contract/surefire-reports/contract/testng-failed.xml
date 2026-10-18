@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" data-provider-thread-count="1" name="Failed suite [contract]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="1" name="contract(failed)" verbose="0">
+    <groups>
+      <run>
+        <include name="contract"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.contracts.ContractTests">
+        <methods>
+          <include name="publishedReadContracts" invocation-numbers="3"/>
+        </methods>
+      </class> <!-- tests.contracts.ContractTests -->
+    </classes>
+  </test> <!-- contract(failed) -->
+</suite> <!-- Failed suite [contract] -->
