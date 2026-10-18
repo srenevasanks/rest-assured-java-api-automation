@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","330","healthContract","smoke","Sun Oct 18 07:48:29 UTC 2026","passed","Sun Oct 18 07:48:30 UTC 2026","tests.contracts.ContractTests","smoke","tests.contracts.ContractTests","healthContract"
+"","2744","validSessionCanBeReused","smoke","Sun Oct 18 07:48:24 UTC 2026","passed","Sun Oct 18 07:48:27 UTC 2026","tests.auth.AuthTests","smoke","tests.auth.AuthTests","validSessionCanBeReused"
+"","1093","filteredBookings","smoke","Sun Oct 18 07:48:28 UTC 2026","passed","Sun Oct 18 07:48:29 UTC 2026","tests.booking.BookingTests","smoke","tests.booking.BookingTests","filteredBookings"
+"","625","roomsAreReadable","smoke","Sun Oct 18 07:48:27 UTC 2026","passed","Sun Oct 18 07:48:28 UTC 2026","tests.room.RoomTests","smoke","tests.room.RoomTests","roomsAreReadable"
+"","200","publicMessageList","smoke","Sun Oct 18 07:48:29 UTC 2026","passed","Sun Oct 18 07:48:29 UTC 2026","tests.message.MessageTests","smoke","tests.message.MessageTests","publicMessageList"
+"","378","brandingHasContactAndLocation","smoke","Sun Oct 18 07:48:29 UTC 2026","passed","Sun Oct 18 07:48:29 UTC 2026","tests.branding.BrandingReportTests","smoke","tests.branding.BrandingReportTests","brandingHasContactAndLocation"

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="25" total="31" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-10-18T07:48:24 UTC" name="smoke" finished-at="2026-10-18T07:48:30 UTC" duration-ms="5475">
+    <groups>
+      <group name="regression">
+        <method signature="AuthTests.validSessionCanBeReused()[pri:0, instance:tests.auth.AuthTests@9ebe38b]" name="validSessionCanBeReused" class="tests.auth.AuthTests"/>
+        <method signature="BookingTests.filteredBookings()[pri:0, instance:tests.booking.BookingTests@3cdf2c61]" name="filteredBookings" class="tests.booking.BookingTests"/>
+        <method signature="BrandingReportTests.brandingHasContactAndLocation()[pri:0, instance:tests.branding.BrandingReportTests@1c33c17b]" name="brandingHasContactAndLocation" class="tests.branding.BrandingReportTests"/>
+        <method signature="ContractTests.healthContract()[pri:0, instance:tests.contracts.ContractTests@5bf0fe62]" name="healthContract" class="tests.contracts.ContractTests"/>
+        <method signature="MessageTests.publicMessageList()[pri:0, instance:tests.message.MessageTests@13ad5cd3]" name="publicMessageList" class="tests.message.MessageTests"/>
+        <method signature="RoomTests.roomsAreReadable()[pri:0, instance:tests.room.RoomTests@4f0100a7]" name="roomsAreReadable" class="tests.room.RoomTests"/>
+      </group> <!-- regression -->
+      <group name="contract">
+        <method signature="ContractTests.healthContract()[pri:0, instance:tests.contracts.ContractTests@5bf0fe62]" name="healthContract" class="tests.contracts.ContractTests"/>
+      </group> <!-- contract -->
+      <group name="smoke">
+        <method signature="AuthTests.validSessionCanBeReused()[pri:0, instance:tests.auth.AuthTests@9ebe38b]" name="validSessionCanBeReused" class="tests.auth.AuthTests"/>
+        <method signature="BookingTests.filteredBookings()[pri:0, instance:tests.booking.BookingTests@3cdf2c61]" name="filteredBookings" class="tests.booking.BookingTests"/>
+        <method signature="BrandingReportTests.brandingHasContactAndLocation()[pri:0, instance:tests.branding.BrandingReportTests@1c33c17b]" name="brandingHasContactAndLocation" class="tests.branding.BrandingReportTests"/>
+        <method signature="ContractTests.healthContract()[pri:0, instance:tests.contracts.ContractTests@5bf0fe62]" name="healthContract" class="tests.contracts.ContractTests"/>
+        <method signature="MessageTests.publicMessageList()[pri:0, instance:tests.message.MessageTests@13ad5cd3]" name="publicMessageList" class="tests.message.MessageTests"/>
+        <method signature="RoomTests.roomsAreReadable()[pri:0, instance:tests.room.RoomTests@4f0100a7]" name="roomsAreReadable" class="tests.room.RoomTests"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2026-10-18T07:48:24 UTC" name="smoke" finished-at="2026-10-18T07:48:30 UTC" duration-ms="5475">
+      <class name="tests.room.RoomTests">
+        <test-method signature="roomsAreReadable()[pri:0, instance:tests.room.RoomTests@4f0100a7]" started-at="2026-10-18T07:48:27 UTC" name="roomsAreReadable" finished-at="2026-10-18T07:48:28 UTC" duration-ms="626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- roomsAreReadable -->
+      </class> <!-- tests.room.RoomTests -->
+      <class name="tests.branding.BrandingReportTests">
+        <test-method signature="brandingHasContactAndLocation()[pri:0, instance:tests.branding.BrandingReportTests@1c33c17b]" started-at="2026-10-18T07:48:29 UTC" name="brandingHasContactAndLocation" finished-at="2026-10-18T07:48:29 UTC" duration-ms="379" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brandingHasContactAndLocation -->
+      </class> <!-- tests.branding.BrandingReportTests -->
+      <class name="tests.contracts.ContractTests">
+        <test-method signature="healthContract()[pri:0, instance:tests.contracts.ContractTests@5bf0fe62]" started-at="2026-10-18T07:48:29 UTC" name="healthContract" finished-at="2026-10-18T07:48:30 UTC" duration-ms="331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- healthContract -->
+      </class> <!-- tests.contracts.ContractTests -->
+      <class name="tests.booking.BookingTests">
+        <test-method signature="filteredBookings()[pri:0, instance:tests.booking.BookingTests@3cdf2c61]" started-at="2026-10-18T07:48:28 UTC" name="filteredBookings" finished-at="2026-10-18T07:48:29 UTC" duration-ms="1094" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filteredBookings -->
+      </class> <!-- tests.booking.BookingTests -->
+      <class name="tests.message.MessageTests">
+        <test-method signature="publicMessageList()[pri:0, instance:tests.message.MessageTests@13ad5cd3]" started-at="2026-10-18T07:48:29 UTC" name="publicMessageList" finished-at="2026-10-18T07:48:29 UTC" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- publicMessageList -->
+      </class> <!-- tests.message.MessageTests -->
+      <class name="tests.auth.AuthTests">
+        <test-method signature="validSessionCanBeReused()[pri:0, instance:tests.auth.AuthTests@9ebe38b]" started-at="2026-10-18T07:48:24 UTC" name="validSessionCanBeReused" finished-at="2026-10-18T07:48:27 UTC" duration-ms="2769" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validSessionCanBeReused -->
+      </class> <!-- tests.auth.AuthTests -->
+    </test> <!-- smoke -->
+  </suite> <!-- smoke -->
+</testng-results>

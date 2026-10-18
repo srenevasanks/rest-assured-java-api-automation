@@ -46,8 +46,12 @@ Delivered HTML: `reports/allure-html/index.html`. Generated Maven HTML: `target/
 
 ## CI validation
 
-The workflow passed actionlint 1.7.12 with exit code 0. It compiles separately, executes smoke sequentially, preserves test failure exits, and always uploads available results/report artifacts. Actual hosted-run status is recorded after publication below.
+The workflow passed actionlint 1.7.12 with exit code 0. It compiles separately, executes smoke sequentially, preserves test failure exits, and always uploads available results/report artifacts.
+
+**GitHub-hosted validation passed:** [run 39109018362](https://github.com/srenevasanks/rest-assured-java-api-automation/actions/runs/39109018362). Java 17 compilation succeeded, smoke executed **6 passed / 0 failed / 0 skipped**, Allure HTML generation succeeded, and the artifact upload succeeded. The downloaded artifact and run metadata are retained under `reports/ci-smoke/`. This verifies runner connectivity and the real workflow; it is not a claim that hosted regression passed.
+
+The initial [push run](https://github.com/srenevasanks/rest-assured-java-api-automation/actions/runs/39108989213) compiled successfully but failed its credential preflight before API testing. Automatic approval review required explicit user approval before sending the public test-account credentials to Actions secrets. After approval, the two encrypted repository secrets were configured and the manual smoke run above passed. No credential is committed. The final documentation/evidence-only commit uses `[skip ci]` to avoid redundant public API traffic; executable source is unchanged from the passing run.
 
 ## Delivery
 
-The framework is a separate Git repository named `rest-assured-java-api-automation`. Existing Selenium and Playwright repositories were not modified. No local application was installed or hosted. Published OpenAPI documents and discovered differences are recorded in Phase 0 and schema provenance.
+The framework is published at [srenevasanks/rest-assured-java-api-automation](https://github.com/srenevasanks/rest-assured-java-api-automation), as a new public repository with meaningful commits. Existing Selenium and Playwright repositories were not modified. No local application was installed or hosted. Published OpenAPI documents and discovered differences are recorded in Phase 0 and schema provenance.

@@ -1,5 +1,7 @@
 # Rest Assured Java API Automation
 
+[![API automation](https://github.com/srenevasanks/rest-assured-java-api-automation/actions/workflows/api-automation.yml/badge.svg)](https://github.com/srenevasanks/rest-assured-java-api-automation/actions/workflows/api-automation.yml)
+
 I built this framework to test the public [Restful Booker Platform](https://automationintesting.online/) through its deployed APIs. It exercises persisted business workflows across rooms, bookings, messages and reporting, alongside authentication, negative inputs, authorization and published JSON contracts.
 
 The project contains **61 meaningful test invocations**. Actual results, including unresolved application and documentation failures, are recorded in [execution summary](docs/execution-summary.md). I keep those failures enabled rather than publishing an artificial green regression.
@@ -17,6 +19,7 @@ mvn clean test -DsuiteXmlFile=src/test/resources/suites/regression.xml
 mvn clean test -DsuiteXmlFile=src/test/resources/suites/contract.xml
 mvn clean test -DsuiteXmlFile=src/test/resources/suites/integration.xml
 mvn allure:report
+mvn allure:serve
 ```
 
 Each `clean` removes the previous `target` results. Generate or archive the report before starting another scope. The machine-readable run summary is `target/execution-summary.json`; Surefire evidence is under `target/surefire-reports`; Allure raw results are under `target/allure-results`; generated HTML is `target/site/allure-maven-plugin/index.html`. The delivered report snapshot is `reports/allure-html/index.html`. Serve Allure over HTTP using the verified command described in [execution summary](docs/execution-summary.md).

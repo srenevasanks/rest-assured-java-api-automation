@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-smoke" class="navigator-link">
+              <span class="suite-name border-passed">smoke</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-smoke" class="navigator-link ">
+                    <span>smoke.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-smoke" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-smoke" class="navigator-link ">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-smoke" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-smoke" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-smoke" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-smoke" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-smoke" class="hide-methods passed suite-smoke"> (hide)</a> <!-- hide-methods passed suite-smoke -->
+                      <a href="#" panel-name="suite-smoke" class="show-methods passed suite-smoke"> (show)</a> <!-- show-methods passed suite-smoke -->
+                    </span>
+                    <div class="method-list-content passed suite-smoke">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-smoke" title="tests.branding.BrandingReportTests" class="method navigator-link" hash-for-method="brandingHasContactAndLocation">brandingHasContactAndLocation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-smoke" title="tests.booking.BookingTests" class="method navigator-link" hash-for-method="filteredBookings">filteredBookings</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-smoke" title="tests.contracts.ContractTests" class="method navigator-link" hash-for-method="healthContract">healthContract</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-smoke" title="tests.message.MessageTests" class="method navigator-link" hash-for-method="publicMessageList">publicMessageList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-smoke" title="tests.room.RoomTests" class="method navigator-link" hash-for-method="roomsAreReadable">roomsAreReadable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-smoke" title="tests.auth.AuthTests" class="method navigator-link" hash-for-method="validSessionCanBeReused">validSessionCanBeReused</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-smoke -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-smoke" class="panel smoke">
+          <div class="suite-smoke-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.auth.AuthTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validSessionCanBeReused">
+                  </a> <!-- validSessionCanBeReused -->
+                  <span class="method-name">validSessionCanBeReused</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-smoke-class-passed -->
+          <div class="suite-smoke-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.room.RoomTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="roomsAreReadable">
+                  </a> <!-- roomsAreReadable -->
+                  <span class="method-name">roomsAreReadable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-smoke-class-passed -->
+          <div class="suite-smoke-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.branding.BrandingReportTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="brandingHasContactAndLocation">
+                  </a> <!-- brandingHasContactAndLocation -->
+                  <span class="method-name">brandingHasContactAndLocation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-smoke-class-passed -->
+          <div class="suite-smoke-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.booking.BookingTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="filteredBookings">
+                  </a> <!-- filteredBookings -->
+                  <span class="method-name">filteredBookings</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-smoke-class-passed -->
+          <div class="suite-smoke-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.contracts.ContractTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="healthContract">
+                  </a> <!-- healthContract -->
+                  <span class="method-name">healthContract</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-smoke-class-passed -->
+          <div class="suite-smoke-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.message.MessageTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="publicMessageList">
+                  </a> <!-- publicMessageList -->
+                  <span class="method-name">publicMessageList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-smoke-class-passed -->
+        </div> <!-- panel smoke -->
+        <div panel-name="test-xml-smoke" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/runner/work/rest-assured-java-api-automation/rest-assured-java-api-automation/src/test/resources/suites/smoke.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; data-provider-thread-count=&quot;1&quot; name=&quot;smoke&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;smoke&quot; verbose=&quot;0&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;smoke&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;tests.auth&quot;/&gt;
+      &lt;package name=&quot;tests.room&quot;/&gt;
+      &lt;package name=&quot;tests.booking&quot;/&gt;
+      &lt;package name=&quot;tests.message&quot;/&gt;
+      &lt;package name=&quot;tests.branding&quot;/&gt;
+      &lt;package name=&quot;tests.contracts&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.auth.AuthTests&quot;/&gt;
+      &lt;class name=&quot;tests.room.RoomTests&quot;/&gt;
+      &lt;class name=&quot;tests.booking.BookingTests&quot;/&gt;
+      &lt;class name=&quot;tests.message.MessageTests&quot;/&gt;
+      &lt;class name=&quot;tests.branding.BrandingReportTests&quot;/&gt;
+      &lt;class name=&quot;tests.contracts.ContractTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- smoke --&gt;
+&lt;/suite&gt; &lt;!-- smoke --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-smoke" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for smoke</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">smoke (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-smoke" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for smoke</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">contract</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">healthContract</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">brandingHasContactAndLocation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">filteredBookings</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">healthContract</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">publicMessageList</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">roomsAreReadable</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validSessionCanBeReused</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">brandingHasContactAndLocation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">filteredBookings</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">healthContract</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">publicMessageList</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">roomsAreReadable</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validSessionCanBeReused</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-smoke" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for smoke</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_smoke');
+function tableData_smoke() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'validSessionCanBeReused')
+data.setCell(0, 2, 'tests.auth.AuthTests')
+data.setCell(0, 3, 2769);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'filteredBookings')
+data.setCell(1, 2, 'tests.booking.BookingTests')
+data.setCell(1, 3, 1094);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'roomsAreReadable')
+data.setCell(2, 2, 'tests.room.RoomTests')
+data.setCell(2, 3, 626);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'brandingHasContactAndLocation')
+data.setCell(3, 2, 'tests.branding.BrandingReportTests')
+data.setCell(3, 3, 379);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'healthContract')
+data.setCell(4, 2, 'tests.contracts.ContractTests')
+data.setCell(4, 3, 331);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'publicMessageList')
+data.setCell(5, 2, 'tests.message.MessageTests')
+data.setCell(5, 3, 202);
+window.suiteTableData['smoke']= { tableData: data, tableDiv: 'times-div-smoke'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <div id="times-div-smoke">
+              </div> <!-- times-div-smoke -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-smoke" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for smoke</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-smoke" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">25 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.auth.AuthTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">logoutRequiresToken</span>
+                <br/>
+                <span class="ignored-method-name">invalidToken</span>
+                <br/>
+                <span class="ignored-method-name">missingToken</span>
+                <br/>
+                <span class="ignored-method-name">invalidCredentials</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.room.RoomTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">invalidRoomContract</span>
+                <br/>
+                <span class="ignored-method-name">invalidSessionCannotCreateRoom</span>
+                <br/>
+                <span class="ignored-method-name">acceptedPriceBoundaries</span>
+                <br/>
+                <span class="ignored-method-name">nonexistentRoomReturnsNotFound</span>
+                <br/>
+                <span class="ignored-method-name">createRequiresSession</span>
+                <br/>
+                <span class="ignored-method-name">invalidRoomIdentifier</span>
+                <br/>
+                <span class="ignored-method-name">isolatedRoomCrud</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.branding.BrandingReportTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">brandingUpdateRequiresSession</span>
+                <br/>
+                <span class="ignored-method-name">reportsRequireSession</span>
+                <br/>
+                <span class="ignored-method-name">authenticatedReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.booking.BookingTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">listRequiresRoomFilter</span>
+                <br/>
+                <span class="ignored-method-name">bookingRoomMessageReportWorkflow</span>
+                <br/>
+                <span class="ignored-method-name">reversedDatesRejected</span>
+                <br/>
+                <span class="ignored-method-name">listRequiresAuthentication</span>
+                <br/>
+                <span class="ignored-method-name">invalidBookingContract</span>
+                <br/>
+                <span class="ignored-method-name">nonexistentBooking</span>
+                <br/>
+                <span class="ignored-method-name">overlappingBookingRejected</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.contracts.ContractTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">publishedReadContracts</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.message.MessageTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">invalidMessageContract</span>
+                <br/>
+                <span class="ignored-method-name">createReadMarkReadDelete</span>
+                <br/>
+                <span class="ignored-method-name">individualMessageIsPublic</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-smoke" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.auth.AuthTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validSessionCanBeReused</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.room.RoomTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">roomsAreReadable</span>
+                <span class="method-start">2807 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.booking.BookingTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">filteredBookings</span>
+                <span class="method-start">3436 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.message.MessageTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">publicMessageList</span>
+                <span class="method-start">4531 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.branding.BrandingReportTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">brandingHasContactAndLocation</span>
+                <span class="method-start">4735 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.contracts.ContractTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">healthContract</span>
+                <span class="method-start">5115 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
