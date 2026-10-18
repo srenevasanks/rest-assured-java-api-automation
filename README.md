@@ -2,6 +2,10 @@
 
 [![API automation](https://github.com/srenevasanks/rest-assured-java-api-automation/actions/workflows/api-automation.yml/badge.svg)](https://github.com/srenevasanks/rest-assured-java-api-automation/actions/workflows/api-automation.yml)
 
+**[Open Allure report](https://srenevasanks.github.io/rest-assured-java-api-automation/allure/) · [Execution summary](docs/execution-summary.md)**
+
+The report is the saved **18 October 2026 regression snapshot: 61 tests, 58 passed, 3 failed, 0 skipped**. It preserves the known application and published-contract failures; the passing CI badge refers to the separate six-test smoke suite.
+
 I built this framework to test the public [Restful Booker Platform](https://automationintesting.online/) through its deployed APIs. It exercises persisted business workflows across rooms, bookings, messages and reporting, alongside authentication, negative inputs, authorization and published JSON contracts.
 
 The project contains **61 meaningful test invocations**. Actual results, including unresolved application and documentation failures, are recorded in [execution summary](docs/execution-summary.md). I keep those failures enabled rather than publishing an artificial green regression.
