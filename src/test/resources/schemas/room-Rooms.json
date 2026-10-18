@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$ref": "#/definitions/Rooms",
+  "definitions": {
+    "Room": {
+      "type": "object",
+      "properties": {
+        "roomid": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "roomName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "type": {
+          "type": "string",
+          "pattern": "Single|Double|Twin|Family|Suite"
+        },
+        "accessible": {
+          "type": "boolean"
+        },
+        "image": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "roomPrice": {
+          "type": "integer",
+          "format": "int32",
+          "maximum": 999,
+          "minimum": 1
+        }
+      },
+      "required": [
+        "roomid",
+        "roomName",
+        "type",
+        "accessible",
+        "roomPrice",
+        "features"
+      ]
+    },
+    "Rooms": {
+      "type": "object",
+      "properties": {
+        "rooms": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Room"
+          }
+        }
+      },
+      "required": [
+        "rooms"
+      ]
+    }
+  }
+}

@@ -1,0 +1,64 @@
+name: Java API automation
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: Live API scope
+        type: choice
+        options: [smoke, regression, contract, integration]
+        default: smoke
+permissions:
+  contents: read
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+      - name: Compile framework and tests without API traffic
+        run: mvn -B -DskipTests test-compile
+  live-api:
+    needs: compile
+    # Forks compile; credentials are available only to trusted repository runs.
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    concurrency:
+      group: shared-public-api
+      cancel-in-progress: false
+    env:
+      API_USERNAME: ${{ secrets.API_USERNAME }}
+      API_PASSWORD: ${{ secrets.API_PASSWORD }}
+      SCOPE: ${{ github.event.inputs.scope || 'smoke' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+      - name: Require documented test account in repository secrets
+        run: test -n "$API_USERNAME" && test -n "$API_PASSWORD"
+      - name: Execute selected suite sequentially
+        run: mvn -B clean test "-DsuiteXmlFile=src/test/resources/suites/${SCOPE}.xml"
+      - name: Generate Allure HTML even when tests fail
+        if: always() && hashFiles('target/allure-results/*-result.json') != ''
+        run: mvn -B allure:report
+      - name: Preserve test evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: api-${{ env.SCOPE }}-${{ github.run_id }}
+          retention-days: 14
+          path: |
+            target/allure-results/
+            target/site/allure-maven-plugin/
+            target/surefire-reports/
+            target/execution-summary.json

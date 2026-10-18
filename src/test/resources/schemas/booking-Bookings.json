@@ -1,0 +1,125 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$ref": "#/definitions/Bookings",
+  "definitions": {
+    "Booking": {
+      "type": "object",
+      "properties": {
+        "bookingid": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "roomid": {
+          "type": "integer",
+          "format": "int32",
+          "minimum": 1
+        },
+        "firstname": {
+          "type": "string",
+          "maxLength": 18,
+          "minLength": 3
+        },
+        "lastname": {
+          "type": "string",
+          "maxLength": 30,
+          "minLength": 3
+        },
+        "depositpaid": {
+          "type": "boolean"
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "minLength": 1
+        },
+        "phone": {
+          "type": "string",
+          "maxLength": 21,
+          "minLength": 11
+        },
+        "bookingdates": {
+          "$ref": "#/definitions/BookingDates"
+        }
+      },
+      "required": [
+        "bookingid",
+        "roomid",
+        "firstname",
+        "lastname",
+        "depositpaid",
+        "bookingdates"
+      ]
+    },
+    "BookingDates": {
+      "type": "object",
+      "properties": {
+        "checkin": {
+          "type": "string",
+          "format": "date"
+        },
+        "checkout": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "checkin",
+        "checkout"
+      ]
+    },
+    "CreatedBooking": {
+      "type": "object",
+      "properties": {
+        "bookingid": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "booking": {
+          "$ref": "#/definitions/Booking"
+        }
+      }
+    },
+    "AvailableRoom": {
+      "type": "object",
+      "properties": {
+        "roomid": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "BookingSummaries": {
+      "type": "object",
+      "properties": {
+        "bookings": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/BookingSummary"
+          }
+        }
+      }
+    },
+    "BookingSummary": {
+      "type": "object",
+      "properties": {
+        "bookingDates": {
+          "$ref": "#/definitions/BookingDates"
+        }
+      }
+    },
+    "Bookings": {
+      "type": "object",
+      "properties": {
+        "bookings": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Booking"
+          }
+        }
+      },
+      "required": [
+        "bookings"
+      ]
+    }
+  }
+}

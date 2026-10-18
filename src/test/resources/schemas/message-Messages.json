@@ -1,0 +1,93 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$ref": "#/definitions/Messages",
+  "definitions": {
+    "Message": {
+      "type": "object",
+      "properties": {
+        "messageid": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "minLength": 1
+        },
+        "phone": {
+          "type": "string",
+          "maxLength": 21,
+          "minLength": 11
+        },
+        "subject": {
+          "type": "string",
+          "maxLength": 100,
+          "minLength": 5
+        },
+        "description": {
+          "type": "string",
+          "maxLength": 2000,
+          "minLength": 20
+        }
+      },
+      "required": [
+        "description",
+        "email",
+        "name",
+        "phone",
+        "subject"
+      ]
+    },
+    "Count": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "MessageSummary": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "name": {
+          "type": "string"
+        },
+        "subject": {
+          "type": "string"
+        },
+        "read": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "subject",
+        "read"
+      ]
+    },
+    "Messages": {
+      "type": "object",
+      "properties": {
+        "messages": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/MessageSummary"
+          }
+        }
+      },
+      "required": [
+        "messages"
+      ]
+    }
+  }
+}

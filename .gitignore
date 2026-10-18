@@ -1,0 +1,6 @@
+target/
+.allure/
+.idea/
+*.iml
+.env
+*.log

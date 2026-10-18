@@ -1,0 +1,5 @@
+This repository is an independently authored test client, not a redistribution
+of the Restful Booker Platform application. The upstream application is GPL-3.0.
+Published OpenAPI snapshots are retained as attributed API contract evidence.
+Upstream: https://github.com/mwinteringham/restful-booker-platform
+Official collection: https://www.postman.com/automation-in-testing/restful-booker-collections/documentation/ci13ds3/restful-booker-platform
